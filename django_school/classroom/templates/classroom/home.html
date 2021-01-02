@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  .button2:hover {
+border-radius: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+  background-color: #977878;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+
+ {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 35px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+</style>
+  <center><h2>Welcome to the AptCoder      <i class="fas fa-school fa-3x"></i></h2></center>
+
+
+<div class="row">
+  <div class="column" style="background-color:#E8DAEF;">
+    <center><i class="fas fa-user-graduate fa-9x"></i></center>
+    <br/><br/><br/>
+      <center><a href="{% url 'student_signup' %}" class="button button2" role="button">I'm a student</a>
+</center>
+  </div>
+
+  <div class="column" style="background-color:#E8DAEF;">
+    <center><i class="fas fa-chalkboard-teacher fa-9x"></i></center>
+    <br/><br/><br/>
+      <center><a href="{% url 'teacher_signup' %}" class="button button2" role="button">I'm a Teacher</a>
+</center>
+  </div>
+
+  <p class="lead">
+    If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>. If you are new to Django Schools, get started
+    by creating a <a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">teacher account</a>.
+  </p>
+<script src="https://kit.fontawesome.com/a076d05399.js">
+{% endblock %}
