@@ -1,0 +1,669 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    {% include 'webDevelopment/links.html' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include 'webDevelopment/links.html' %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+    
+.navbar-brand{
+    padding-left: 100px;
+}
+.navbar-nav {
+    padding-left: 400px;
+    padding-right: 50px;
+    
+}
+.nav-item{
+    border: solid white;
+    border-width: 2px;
+    border-radius: 4px;
+    height: 36px;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    transition: 0.4s;
+}
+.nav-link-text{
+    text-decoration: none;
+    color: black;
+}
+.nav-item:hover{
+    border-color: #e40b8d;
+    background: #e40b8d;
+    color: white;
+}
+.nav-item:hover a{
+    text-decoration: none;
+    color: white;
+}
+.sbutton{
+    color: #e40b8d;
+    border-color: #e40b8d;
+    border-width: 2px;
+    transition: 0.4s;
+    background-color: white;
+    height: 36px;
+    border-radius: 2px;
+    
+}
+.sbutton:hover{
+    color: white;
+    background: #e40b8d;
+}
+
+
+      .name_email_nav{
+        transition:0.4s;
+      }
+
+
+      .name_email_nav:hover{
+         border:solid black;
+         border-radius:10px; 
+         padding-left:5px;
+         padding-right:5px;
+         background: #00FF00;
+         color:black;
+      }
+
+
+
+        
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+        border:solid #ffffff;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 36px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+      
+
+      /*-----------  COURSES WE PROVIDE  ------------*/
+
+
+.course-section-full{
+    margin-top: 30px;
+    background: #f2e4d7;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.our-courses-text{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-weight: 600;
+    font-family: Tahoma, Verdana, sans-serif;
+
+}
+.small-text{
+    font-size: 20px;
+    color: rgb(94, 93, 91);
+}
+.menu-wrapper {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	margin: 1em auto;
+	overflow-x: hidden;
+    overflow-y: hidden;
+    background: #f2e4d7;
+    margin-top: 30px;
+}
+
+.menu	{
+	height: 400px;
+    background: #f2e4d7;
+	box-sizing: border-box;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+  }
+  
+.item {
+    display: inline-block;
+    width: 400px;
+    height: 100%;
+    outline: 1px dotted gray;
+    padding: 1em;
+    box-sizing: border-box;
+    border: solid black;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.html-course{
+    /*background: url({% static 'home/images/html.png' %});
+    background-size: cover;
+    position: relative;*/
+}
+.detailsHTML {
+    width: 70%;
+    height: 80%;    
+    padding: 5% 8%;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: 50%;
+    background: rgba(255,255,255,0.9);  
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    word-wrap: break-word;
+    
+}
+.html-course:hover .detailsHTML {/**/
+    width: 70%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    word-wrap: break-word;
+}
+.css-course:hover .detailsHTML {
+    width: 70%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    word-wrap: break-word;
+}
+.js-course:hover .detailsHTML {
+    width: 70%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    word-wrap: break-word;
+}
+.android-course:hover .detailsHTML {
+    width: 70%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    word-wrap: break-word;
+}
+.cpp-course:hover .detailsHTML {
+    width: 70%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    word-wrap: break-word;
+}
+.python-course:hover .detailsHTML {
+    width: 70%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    word-wrap: break-word;
+}
+
+.css-course{/*
+    background: url("images/css.png");
+    background-size: cover;
+    position: relative;*/
+}
+.js-course{/*
+    background: url("images/js.png");
+    background-size: cover;
+    position: relative;*/
+}
+.android-course{/*
+    background: url("images/android.png");
+    background-size: cover;
+    position: relative;*/
+}
+.cpp-course{/*
+    background: url("images/cpp.png");
+    background-size: cover;
+    position: relative;*/
+}
+.python-course{/*
+    background: url("images/python.png");
+    background-size: cover;
+    position: relative;*/
+    margin-right: 20px;
+}
+
+.paddle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3em;
+}
+.left-paddle {
+    left: 0;
+    background: #e40b8d;
+    color: white;
+    height: 60px;
+    width: 60px;
+    margin-top: 160px;
+    border: solid black 2px;
+    transition: 0.4s;
+}
+.left-paddle:hover{
+    background: greenyellow;
+    color: black;
+    font-weight: 800;
+    padding-top: 0px;
+
+}
+.right-paddle {
+    right: 0;
+    background: #e40b8d;
+    color: white;
+    height: 60px;
+    width: 60px;
+    margin-top: 160px;
+    border: solid black 2px;
+    transition: 0.4s;
+}
+.right-paddle:hover{
+    background: greenyellow;
+    color: black;
+    font-weight: 800;
+    padding-top: 0px;
+
+}
+.hidden {
+	display: none;
+}
+.direct-reg-button{
+    border: solid black;
+    border-radius: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.4s;
+    background: white;
+}
+.direct-reg-button:hover{
+    background: greenyellow;
+    
+}
+
+
+
+.foot{
+    background-color: #f2e4d7;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.footer-logo{
+    margin: auto;
+}
+.footer-logo a{
+    color: black;
+    transition: 0.4s;
+}
+.footer-logo a:hover{
+    color: black;
+    border: solid black;
+    border-radius: 20px;
+    background: #e40b8d;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.col a{
+    color: black;
+}
+.footer-brand{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 33px;
+}
+.mail-id a{
+    transition: 0.4s;
+}
+.contact-us a{
+    transition: 0.4s;
+}
+.mail-id a:hover{
+    color: black;
+    border: solid black;
+    border-radius: 20px;
+    background: #e40b8d;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.contact-us a:hover{
+    color: black;
+    border: solid black;
+    border-radius: 20px;
+    background: #e40b8d;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+.profile-logout-section a{
+  color:red;
+}
+
+
+
+    </style>
+    <title>Student Dashboard</title>
+  </head>
+  <body>
+
+    <!--:::::::Side menu::::::-->
+
+  <div id="mySidenav" class="sidenav">
+  <img src="{% static '/webDevelopment/images/single_page_logo.png'%}" width="100%">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p style="color:#ffffff; text-align:center;">Welcome {{user}}</p>
+  <img src="{% static '/webDevelopment/images/dummy_img.png'%}" width="100%">
+  <p style="color:#ffffff; text-align:center;">test2@gmail.com{{mail}}</p>
+  <a href="#profile">My Profile</a>
+  <a href="#ongoing_courses">My Courses</a>
+  <a href="#cpf">Certificates</a>
+  <a href="#cpf">Performance</a>
+  <a href="#cpf">Forum</a>
+  <div class="dropdown-divider"></div>
+  <a href="#our_courses">All Courses</a>
+  <a href="#">Edit Profile</a>
+  <a href="#foot">Contact Us</a>
+  <div class="dropdown-divider"></div>
+  <a href="{% url 'logout' %}" class="btn btn-danger logout-button" style="width:80%; margin:auto;margin-bottom:20px;padding-left:10px;">Logout</a>
+</div>
+
+  <!--::header part start::-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                {% if user.is_authenticated %}
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <img src="{% static '/webDevelopment/images/green.png' %}" height=20 width=20 style="margin-left:30px;">
+                <p class="name_email_nav" style="margin-top:0px;">{{user}}, user@mail.com</p>
+
+                
+                
+                </button>
+                {% endif %}
+                
+                
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                             <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-text" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-text" href="#">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-text" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-text" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-text" href="#">Contact</a>
+                        </li>
+                        
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="sbutton" type="submit">Search</button>
+                    </form>
+                    
+                </div>
+            </nav>
+
+    <!-- Header part end-->
+
+
+    
+<!--:::::: Profile section ::::::-->
+    <div id="profile" class="jumbotron" style="width:80%;margin:auto;margin-top:10px;margin-bottom:10px;background:#ffddf4;">
+    <div class="row">
+        <div class="col profile-logout-section" style="text-align:center;">
+          <img src="{% static '/webDevelopment/images/dummy_img.png' %}">
+          <h1 class="display-4">{{user}}</h1>
+          <button type="button" class="btn btn-outline-success">Edit Profile</button>
+          <a class="btn btn-outline-danger" href="{% url 'logout' %}">Logout</a>
+        </div>
+    <div class="col" style="text-align:left;font-size:25px;">
+        <p style="font-size:25px;">Name: {{user}}</p>
+        <p style="font-size:25px;">Age: 18</p>
+        <p style="font-size:25px;">Email: test2@gmail.com</p>
+        <p style="font-size:25px;">Parent's Name: Mr. XYZ ZYX</p>
+        <p style="font-size:25px;">Parent's Contact: 9999999999</p>
+        <p style="font-size:25px;">Qualifications: Persuing B.tect</p>
+        <p style="font-size:25px;">Branch: CSE</p>
+    </div>
+    </div>
+  
+</div>
+<!--:::::: Profile section ends here ::::::-->
+
+
+
+
+
+
+
+<!--:::::::: MY COURSES section :::::::::-->
+<div id="ongoing_courses" style="width:80%;margin:auto;border:solid black;border-radius:20px; margin-bottom:10px;padding:10px 10px 30px 10px;">
+<p style="text-align:center;font-size:50px;">Ongoing Courses</p>
+
+<div class="card border-success" style="margin-bottom:10px;">
+  <div class="card-body">
+    <h5 class="card-title" ><img src="{% static '/webDevelopment/images/courses/js.png' %}" height=25 width=25> Javascript</h5>
+    <div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+  <button type="button" class="btn btn-outline-success" style="margin-top:10px;">Go To Course</button>
+  </div>
+</div>
+
+<div class="card border-success" style="margin-bottom:10px;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="{% static '/webDevelopment/images/courses/project-image3.png' %}" height=25 width=25> Data Structures using C</h5>
+    <div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+</div>
+  <button type="button" class="btn btn-outline-success" style="margin-top:10px;">Go To Course</button>  
+  </div>
+</div>
+
+<div class="card border-success" style="margin-bottom:10px;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="{% static '/webDevelopment/images/courses/python.png' %}" height=25 width=25> Python</h5>
+    <div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+  <button type="button" class="btn btn-outline-success" style="margin-top:10px;">Go To Course</button>
+  </div>
+</div>
+
+</div>
+<!--:::::::: MY COURSES section ends :::::::::-->
+
+
+
+
+
+<!--::::::: CERTIFICATES, PERFORMANCE AND FORUM :::::::-->
+    <div id="cpf" style="width:80%;margin:auto;">
+      <div class="row">
+        <div class="col">
+            <div class="jumbotron">
+  <h1 class="display-4">Forum Activity</h1>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Mr. ABC</h5>
+    <p class="card-text">Uploaded an image. Topic->C++</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Mr. DEFG</h5>
+    <p class="card-text">Uploaded a question. Topic->CSS</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Mr. HIJKL</h5>
+    <p class="card-text">Answered a question. Topic->CSS</p>
+  </div>
+</div>
+
+
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="#" role="button">Visit Forum</a>
+</div>
+      </div>
+      <div class="col">
+        <div class="row">
+            <div class="jumbotron" style="width:100%;">
+  <h5>Certificates (2)</h5>
+    <a href=""><img src="{% static '/webDevelopment/images/courses/html.png' %}" height=60 width=60 style="margin-right:10px;"></a>
+    <a href=""><img src="{% static '/webDevelopment/images/courses/cpp.png' %}" height=60 width=60 style="margin-right:10px;"></a>
+</div>        
+      </div>
+      <div class="row">
+            <div class="jumbotron" style="width:100%;">
+  <h5>Performance</h5>
+      <a href=""><img src="{% static '/webDevelopment/images/courses/reward1.png' %}" height=60 width=60 style="margin-right:10px;"></a>
+      <a href=""><img src="{% static '/webDevelopment/images/courses/reward2.png' %}" height=60 width=60 style="margin-right:10px;"></a>
+      <a href=""><img src="{% static '/webDevelopment/images/courses/reward3.png' %}" height=60 width=60 style="margin-right:10px;"></a>
+      <a href=""><img src="{% static '/webDevelopment/images/courses/reward5.png' %}" height=60 width=60 style="margin-right:10px;"></a>
+      <a href=""><img src="{% static '/webDevelopment/images/courses/reward5.png' %}" height=60 width=60 style="margin-right:10px;"></a>
+  
+  
+</div>  
+      </div>
+      </div>
+      </div>
+    </div>
+<!--::::::: CERTIFICATES, PERFORMANCE AND FORUM ends :::::::-->
+
+
+
+
+
+
+
+
+<!--::::::::: ALL COURSES SECTION :::::::::::-->
+    {% include "webDevelopment/ourCourses.html" %}
+<!--::::::::: ALL COURSES SECTION ends :::::::::::-->
+
+
+
+{% include 'webDevelopment/scripts.html' %}
+
+
+
+  <!--::::::::::::::::::Footer::::::::::::::-->
+  {% include "webDevelopment/footer.html" %}
+  <!--
+<footer class="foot" id="foot">
+<div class="row footer-upper">
+                <div class="footer-logo">
+                    <img src="{% static '/webDevelopment/images/courses/title.png'%}" height="50px" class="d-inline-block align-top" alt="" loading="lazy">
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col text-center text-light mail-id" style="margin-top: 10px;">
+                    <p style="color: black;">Email:<br><a href="">aptcoder.online@gamil.com</a></p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col text-center text-light contact-us">
+                    <p style="color: black;">Feel free to contact<br><a href="">Contact Us</a></p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col text-center text-light">
+                    <a href=""><img src="{% static '/webDevelopment/images/courses/fb2.png'%}" height="40" width="40" alt=""></a>
+                    <a href=""><img src="{% static '/webDevelopment/images/courses/ig2.png'%}" height="40" width="40" alt=""></a>
+                    <a href=""><img src="{% static '/webDevelopment/images/courses/git.png'%}" height="40" width="40" alt=""></a>
+                    <a href=""><img src="{% static '/webDevelopment/images/courses/twittwe2.png'%}" height="40" width="40" alt=""></a>
+                    <a href=""><img src="{% static '/webDevelopment/images/courses/ld2.png'%}" height="40" width="40" alt=""></a>
+
+                </div>
+            </div>
+                    </footer>
+-->
+    <!--::::::::::::::::::Footer ends::::::::::::::-->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+        <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+

@@ -1,0 +1,447 @@
+  .text-bold{
+  font-family:FuturaPTBold,sans-serif}
+  img{display:block;margin:auto}
+  h1,h2,h3{font-family:FuturaPTBold,sans-serif}
+
+  .color-primary{color:#ff8d1a}
+
+  .curriculum__tabs-content .plan_cont .plan_desc
+  .content,.onclick-menu-content li button{color:#5a7184}
+
+  .color-fff{color:#fff}
+
+  .color-primary{color:#fe8d1b}
+
+  .curriculum__tabs-content .plan_cont .plan
+  .price_desc .achievements .box .detail{color:#959ead}
+
+  .color-1565D8{color:#1565d8}
+
+  @-webkit-keyframes a{0%{opacity:0}to{opacity:1}}
+
+  @keyframes a{0%{opacity:0}to{opacity:1}}body{color:#191919}.color-5A7184,
+
+  .container_curriculum{
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto}
+
+  @media (min-width:768px){
+  .container_curriculum{width:calc(100% - 30px)}
+  html{font-size:12px}}
+
+  @media (min-width:992px){
+  .container_curriculum{width:970px}
+  html{font-size:15px}}
+
+  @media (min-width:1200px){
+  .container_curriculum{width:1140px}
+  html{font-size:16px}}
+
+  .text-center{text-align:center}
+
+  .global-icon{
+  background:url(https://cdnwhjr.s3.ap-south-1.amazonaws.com/website/desktop/spritesheet/Spritesheet.svg) no-repeat;
+  background-size:2144px 1208px}
+
+  @-webkit-keyframes b{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+  @keyframes b{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+  @-webkit-keyframes c{0%{background-position:-5000px 0}to{background-position:5000px 0}}
+
+  @keyframes c{0%{background-position:-5000px 0}to{background-position:5000px 0}}
+
+  .btn:focus{outline:none}
+  .btn-primary{border:1px solid #fe8d1b;background:#fe8d1b}
+
+  @media only screen and (max-width:48rem){.login_btn{height:40px}}
+
+  .book_trial_btn{
+  position:relative;
+  overflow:hidden;
+  width:17rem;
+  height:50px;
+  font-family:FuturaPTBold,sans-serif;
+  justify-content:center;border:none}
+
+  @media only screen and (max-width:48rem){
+  .book_trial_btn{
+  width:150px;height:40px;font-size:12px}}
+
+  .book_trial_btn svg{margin-right:8px}
+
+  .curriculum_btn{width:200px;position:relative;z-index:1}
+
+  .curriculum_btn:hover{box-shadow:none;color:inherit}
+
+  .curriculum__heading{text-align:center}
+
+  .curriculum__tabs{padding:0 0 2rem}
+
+  .curriculum__tabs-container{
+  background:#fff;
+  box-shadow:0 17px 39px rgba(0,0,0,.05);
+  display:flex;
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  width:fit-content;margin:0 auto}
+
+  .curriculum__tabs-container .tab{
+  position:relative;
+  padding:14px 40px;
+  text-align:center;
+  cursor:pointer;
+  transition:all .2s linear}
+
+  @media (max-width:1023px){
+  .curriculum__tabs-container .tab{padding:14px 30px}}
+
+  .curriculum__tabs-container .tab .text{
+  font-size:.875rem;color:#5a7184}
+
+  .curriculum__tabs-container .tab.active{
+  background:#ff8d1a;
+  color:#fff}
+
+  .curriculum__tabs-container .tab.active .text{color:#fff}
+
+  .curriculum__tabs-container .tab.active:after{
+  content:"";position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  width:0;
+  height:0;
+  border-top:10px solid #ff8d1a;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent}
+
+  .curriculum__tabs-content{padding-bottom:2rem}
+
+  .curriculum__tabs-content .curriculum__pricing_tab_context{
+  opacity:1;
+  -webkit-animation-name:a;
+  animation-name:a;-webkit-animation-iteration-count:1;
+  animation-iteration-count:1;-webkit-animation-timing-function:ease-in-out;
+  animation-timing-function:ease-in-out;-webkit-animation-duration:1s;
+  animation-duration:1s}
+
+  .curriculum__tabs-content .curriculum__pricing_tab_context.hide{
+  display:none}
+
+  .curriculum__tabs-content .plan_cont{
+  padding-top:5rem;
+  display:flex;
+  justify-content:space-between;
+  opacity:1;-webkit-animation-name:a;
+  animation-name:a;-webkit-animation-iteration-count:1;
+  animation-iteration-count:1;-webkit-animation-timing-function:ease-in-out;
+  animation-timing-function:ease-in-out;-webkit-animation-duration:1s;
+  animation-duration:1s}
+
+  .curriculum__tabs-content .plan_cont.hide{display:none}
+
+  .curriculum__tabs-content .plan_cont .plan{
+  max-width:21rem;
+  min-width:21rem;
+  height:747px;
+  z-index:2;
+  background:#fff;
+  box-shadow:0 17px 39px rgba(0,0,0,.05);
+  transition:transform .3s ease;transform:scale(1)}
+
+  .curriculum__tabs-content .plan_cont .plan:hover{
+  z-index:2;-webkit-transition:all .2s ease-in;-webkit-transform:scale(1.07);
+  -ms-transition:all .2s ease-in;-ms-transform:scale(1.07);
+  -moz-transition:all .2s ease-in;
+  -moz-transform:scale(1.07);
+  transition:all .2s ease-in;
+  transform:scale(1.07)}
+
+  .curriculum__tabs-content .plan_cont .plan:hover .heading{
+  background:#ff8d1a;color:#fff}
+
+  .curriculum__tabs-content .plan_cont .plan:hover .heading .save_label{
+  background:#fff!important;
+  color:#ff8d1a!important}
+
+  @media (max-width:1024px){
+  .curriculum__tabs-content .plan_cont .plan:hover{transform:scale(1.05)}}
+
+  @media (max-width:1200px){
+  .curriculum__tabs-content .plan_cont .plan{
+  margin-bottom:20px}}
+
+  @media (max-width:1024px){
+  .curriculum__tabs-content .plan_cont .plan{
+  max-width:20rem;min-width:20rem;height:700px}}
+
+  @media (max-width:768px){
+  .curriculum__tabs-content .plan_cont .plan{
+  max-width:19rem;min-width:19rem;height:700px}}
+
+  .curriculum__tabs-content .plan_cont .plan .heading{
+  height:124px;
+  background:#fff4e8;
+  padding:20px;
+  display:flex;
+  flex-direction:column}
+
+  .curriculum__tabs-content .plan_cont .plan .heading .details{
+  display:flex;
+  align-items:center;
+  margin-top:auto}
+
+  .curriculum__tabs-content .plan_cont .plan .heading .details .save_label{
+  margin-left:auto;
+  background:#ff8d1a;
+  padding:0 8px;
+  color:#fff;
+  white-space:nowrap}
+
+  .curriculum__tabs-content .plan_cont .plan .plan_desc{
+  height:250px;
+  padding:20px;
+  border-bottom:1px solid #e5eaf4}
+
+  .curriculum__tabs-content .plan_cont .plan .plan_desc h6{margin-bottom:10px}
+
+  .curriculum__tabs-content .plan_cont .plan .plan_desc .label{
+  background:#fff4e8;
+  padding:3.2px 8px;
+  color:#ff8d1a;
+  width:-webkit-fit-content;width:-moz-fit-content;
+  width:fit-content;margin-bottom:12px}
+
+  .curriculum__tabs-content .plan_cont .plan .plan_desc .content{
+  margin-bottom:.3125rem}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc{
+  padding:20px;position:relative}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .plan_tag{
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  width:fit-content;
+  padding:2px 16px 2px 8px;
+  position:absolute;
+  top:-12px;
+  left:0;
+  color:#fff}
+
+  @media (max-width:1024px){
+  .curriculum__tabs-content .plan_cont .plan .price_desc .plan_tag{
+  top:-10px}}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .plan_tag.popular{
+  background:#2ab7ca}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .plan_tag .best-value{
+  background:#ff8d1a}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .price{
+  display:flex;
+  align-items:baseline}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .price del{
+  margin-left:auto}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .submit-btn{
+  margin-top:10px;
+  margin-bottom:24px;
+  padding:10px 44px;
+  width:100%;
+  color:#fff;
+  border:1px solid #fe8d1b;
+  font-size:1.125rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  height:45px}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .achievements{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-around}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .achievements .box{
+  padding:16px 0;
+  width:50%}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .achievements .box .curriculum__bg{
+  margin-left:auto;
+  margin-right:auto}
+
+  @media (max-width:1024px){
+  .curriculum__tabs-content .plan_cont .plan .price_desc .achievements .box .curriculum__bg{
+  transform:scale(.7);border-radius:50%}}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .achievements .box .detail{
+  text-align:center}
+
+  .curriculum__tabs-switch{
+  position:relative;
+  display:inline-block;
+  width:48px;
+  height:24px;
+  margin-left:16px;
+  margin-right:16px}
+
+  .curriculum__tabs-switch input{
+  opacity:0;width:0;height:0}
+
+  .curriculum__bottom{
+  font-size:1.125rem;
+  color:#5a7184;
+  display:flex;
+  align-items:center;
+  justify-content:space-between}
+
+  .curriculum__bottom .submit-btn{
+  color:#fff;padding:10px 44px;border:0;background:#fe8d1b;border:1px solid #fe8d1b;font-size:1.125rem;display:flex;align-items:center;justify-content:center}
+
+  .curriculum__bottom .submit-btn:disabled{
+  background:#f1f1f5;border:1px solid #f1f1f5;color:#979797}
+
+  .curriculum__bg__achievement-star{
+  width:20px;height:20px;background-position:-137px -174px;margin-right:10px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-star{
+  background-position:-137px -174px}}
+
+  .curriculum__bg__achievement-coding{
+  width:80px;height:80px;background-position:-669px -365px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-coding{
+  background-position:-678px -374px}}
+
+  .curriculum__bg__achievement-developer{
+  width:5rem;height:5rem;background-position:-770px -365px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-developer{
+  background-position:-780px -374px}}
+
+  .curriculum__bg__achievement-playstore{
+  width:5rem;height:5rem;background-position:-569px -365px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-playstore{
+  background-position:-577px -374px}}
+
+  .curriculum__bg__achievement-silicon{
+  width:5rem;height:5rem;background-position:-871px -365px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-silicon{
+  background-position:-882px -374px}}
+
+  .curriculum__bg__achievement-lifetime{
+  width:5rem;
+  height:5rem;background-position:-973px -365px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-lifetime{
+  background-position:-981px -374px}}
+
+  .curriculum__bg__achievement-space{
+  width:5rem;
+  height:5rem;
+  background-position:-1074px -365px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-space{
+  background-position:-1083px -374px
+  }}
+
+  .curriculum__bg__achievement-fellowship{
+  width:5rem;
+  height:5rem;
+  background-position:-1174px -365px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-fellowship{
+  background-position:-1182px -374px
+  }}
+
+  .curriculum__bg__achievement-brain{
+  background:url(desktop-home/brain1x.png) no-repeat 0 0;
+  width:24px;
+  height:24px;
+  position:relative;top:26px}
+
+  @media (max-width:1024px){
+  .curriculum__bg__achievement-brain{
+  top:17px
+  }}
+
+ .curriculum__bg-circle{
+ width:75px;
+ height:75px;
+ background:#ebf8fa;
+ border-radius:50%;
+ margin:auto}
+
+  @media (max-width:1024px){
+  .curriculum__bg-circle{
+  width:60px;
+  height:60px
+  }}
+
+  .content_center{
+  display:flex;
+  align-items:center}
+
+  @-webkit-keyframes d{to{
+  transform:translate3d(-100%,0,0)
+  }}
+
+  @keyframes d{to{
+  transform:translate3d(-100%,0,0)}}
+  input,select{
+  font-size:1.125rem}
+  h1{font-size:3rem;line-height:3.5625rem}
+  h2{font-size:2.25rem;line-height:3rem}
+  h3{font-size:2rem;line-height:2.25rem}
+  h4{font-size:1.5rem;line-height:2rem}
+  h5{font-size:1.25rem}
+  h5,h6{line-height:1.5rem}
+  h6{font-size:1.125rem}
+
+  .curriculum__tabs-content .plan_cont .plan .plan_desc .content,.font18{
+  line-height:1.32rem}
+
+  .font20{
+  font-size:1.25rem;
+  line-height:1.625rem}
+
+  .font16{
+  font-size:1rem;
+  line-height:1.125rem}
+
+  .curriculum__tabs-content .plan_cont .plan .price_desc .achievements .box .detail,.curriculum__tabs-content .plan_cont .plan .price_desc .plan_tag,.featured-contents .description,.font14{
+  font-size:.875rem;
+  line-height:1.125rem}
+
+  .font46{
+  font-size:2.875rem}
+
+  .font50{
+  font-size:3.125rem}
+
+  .font24{
+  font-size:1.5rem}
+
+  .curriculum__tabs-content .plan_cont .plan .plan_desc .content,.font18
+  {font-size:1.1rem}
+
+  #curriculum-section{
+  margin-top: 50px;
+  background:#fafafa;
+  padding:2rem 0}

@@ -1,0 +1,713 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+
+    {% include 'webDevelopment/links.html' %}
+
+    <style>
+        body{
+            background-image: url("{% static '/webDevelopment/images/body_back_test/body_back_3.png' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        p{
+            color:black;
+            font-size:16px;
+            font-family: "Times New Roman";
+        }
+
+
+        
+/* pathmaker cards */
+.frame {
+    margin-top:70px;
+    text-align: center; 
+    position: relative;
+    cursor: pointer;    
+    perspective: 500px; 
+}
+.frame img {
+    
+}
+.frame .details {
+    width: 100%;
+    height: 100%;    
+    padding: 5% 8%;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: 50%;
+    background: rgba(255,255,255,0.9);  
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    
+}
+.frame:hover .details {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    border:solid black;
+    border-radius:40px;
+}
+
+.details a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #55acee;
+  z-index: 1;
+  left:30%;
+}
+
+.details a .icon {
+  position: relative;
+  color: #262626;
+  
+  transition: .5s;
+  z-index: 3;
+}
+
+.details a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.details a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.details a:hover:before {
+  top: 0;
+}
+
+.details:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.details:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.details:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.details:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+
+        
+    </style>
+
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu" style="background:white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="padding-top:10px;padding-bottom:10px;margin-bottom:0px; margin-top:0px;">
+                        <div class="navbar-brand">
+                            <a href="/" style="margin-top:0px;"><img src="{% static '/webDevelopment/images/PNG-LOGO.png' %}" alt="logo" style="height:50px;"> </a>
+                        </div>
+                        {% include 'webDevelopment/header.html' %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb" style="margin-top:60px;">
+        <img src="{% static '/webDevelopment/images/About-us.jpg' %}" alt="" style="width:100%;height:700px;">
+    </section>
+    <!-- breadcrumb start-->
+    <section class="course_section_padding_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="title_top">Why Aptcoder</h3>
+                    <div class="content">
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">AptCoder is a new innovative website coming to the world of new-age kids who
+are the future of tomorrow. Let’s start with the fact that why we are coming into
+the market and what is the main reason behind our project.</p><br>
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">In today’s time of smartphones and mobile apps, every kid knows how to use
+electronic gadgets and make proper use of it while studying. But nobody has any
+idea how these apps are made and what coding technology is used. This is because
+of the lack of learning which is not there for kids at an early age. We are
+committed to creating an online classroom atmosphere that is stimulating and
+encouraging to students. We have a team of dedicated, resourceful, and goal-driven
+professional educators with solid commitments to the social and academic growth
+of every child. If it was introduced back at those times when it was very much
+required, then the situation would be different for many young generations. So this
+lack of knowledge which was not given earlier will be possible now through our
+medium. We as Aptcoder are coming into the market as an online coding platform
+where kids from kindergarten to 12th class can be able to learn and understand
+what coding is all about.</p><br>
+                        <h4>
+                            Concept Building
+                        </h4>
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            The building process for children can only be strong if their base is made from the
+starting phase of their journey of learning. Aptcoder will give a platform where
+every child will get to learn and understand the concept of coding from scratch to
+an advanced level. Professional experts will teach from basic languages which
+will help them to understand concepts. Teachers will give live online classes
+according to the level selected by the particular students. We give full assurance
+that our platform will make your child reach a high height in the field of coding.
+                        </p><br>
+                        <h4>
+                            Career Nurturing
+                        </h4>
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            Research shows that by 2030, most of the jobs will be taken by Artificial
+Intelligence or Machine Learning. Almost all the industries, in some way,
+integrate coding to run their businesses. The study also suggests that most of the
+brain development of a child starts at an early age, which brings logical thinking
+and aptitude in their daily life prospects. This will not only nurture their career in
+the long run but also helps them in getting ready with an early age professional
+portfolio to meet the future demand and churn their brain to become a successful
+entrepreneur. From the smallest electrical switch to massive rockets, every industry
+is now looking for a creative skillset, which will effectively improve its profits.
+Learning at a young age will help them to understand, solve their problems,
+develop logical thinking, grab future technologies, and most importantly to be a job
+provider instead of a job seeker.
+                        </p><br>
+                        <h4>
+                            Global Opportunities
+                        </h4>
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            With the introduction of industry4.0 and internet access to almost everyone, they
+open a gate to a vast set of opportunities. This will help AptCoder alumnus to
+interact with another alumnus to participate in various learning activities, such as
+coding competition, bug finder, etc. Future companies will mainly look for
+potential candidates having the skills required for their growth. While learning
+these concepts at this early stage may pace up kids with future demand. New
+technologies bring demand for skilled assets in every field, be its healthcare,
+fabrication, manufacturing, aviation, IT, or any industry. More than being a kid learning coding and logical thinking, skills, and knowledge gained during
+AptCoder sessions will help your kids to become a part of this global change that
+you want to see.
+                        </p><br>
+                    </div>
+                    <h3 class="title_top"><br>How will AptCoder help ??</h3><br>
+                    <div class="content">
+                        <h4>
+                            Courses &amp; Seminars
+                        </h4>
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            We will help our students first by guiding them on how to get started with the
+training process. Professional mentors will be there to provide proper guidance and
+also give trail classes of the course they select. Kids of today’s time are using
+smartphones and apps so they know which app to use, through interactive and
+animated videos learning can be done in a fun way. These courses are designed
+with rigorous R&D done by various top industry professionals, IIT, IIM alumnus,
+and child psychologists. We understand the regular course load of kids, so to
+deliver the course effectively, our mentor will tap the progress of the kids and keep
+them engaged. Our main aim is to connect kids to our platform through various
+coding competitions, bug finder events, and many other things.
+                        </p><br>
+                        <h4>
+                            Project based learning
+                        </h4>
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            Theoretical knowledge is important to grasp all the concepts of a particular coding
+language. But AptCoder will focus on both, firstly mentors will clear every doubt
+and then gives children small assignments related to the topic. So that they can
+understand the concept thoroughly. Our interactive mentors are engaged to fulfill
+this gap with daily life projects, tests, and industry-related projects. In every
+programming language, the course has major time involved in completing several
+projects, so on completion, kids can develop the skills required for the coming
+future.
+                        </p><br>
+                        <h4>
+                            Location NO BAR
+                        </h4>
+                        <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            We don’t want kids to suffer in terms of time, money, and opportunities. We are
+spending more to accompany the best interactive mentors at your screen via live
+classes to bring everything closer. As we want kids to learn and implement this
+knowledge by applying it through our online coding community, where regular
+competitions and events will be organized by expert professionals from Google,
+Microsoft, Boeing, Airbus, Facebook, etc. With our local and global
+industry/university partners, we frequently conduct boot camps, career fairs &
+webinars to keep everyone updated with the current market demand.
+                        </p><br>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar_top">
+                        <h2 id="qualified_trainers">
+                            Trainers
+                        </h2>
+                        <h4>
+                            Backbone of our programme
+                        </h4>
+                        <div class="card" style="width:100%;text-align:center;margin:auto;margin-top:10px;border:solid black 1px;padding-top:10px;border-radius:10px;">
+                            <img class="card-img-top" src="{% static '/webDevelopment/images/rani.png' %}" alt="Card image" style="width:75%; height:75%;margin:auto;">
+                            <div class="card-body">
+                                <h4 class="card-title">Rani Ray</h4>
+                                <p class="card-text">Master in Full Stack Website development.</p>
+                                <a href="#" class="btn btn-primary" target="_blank">See Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width:100%;text-align:center;margin:auto;margin-top:10px;border:solid black 1px;padding-top:10px;border-radius:10px;">
+                            <img class="card-img-top" src="{% static '/webDevelopment/images/kalam.png' %}" alt="Card image" style="width:75%; height:75%;margin:auto;">
+                            <div class="card-body">
+                                <h4 class="card-title">Kalam</h4>
+                                <p class="card-text">Master in Android App Deelopment and IOS Development.</p>
+                                <a href="#" class="btn btn-primary" target="_blank">See Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width:100%;text-align:center;margin:auto;margin-top:10px;border:solid black 1px;padding-top:10px;border-radius:10px;">
+                            <img class="card-img-top" src="{% static '/webDevelopment/images/t1.png' %}" alt="Card image" style="width:75%; height:75%;margin:auto;">
+                            <div class="card-body">
+                                <h4 class="card-title">Arnav Goel</h4>
+                                <p class="card-text">Neural Network Expert with a broad knowledge in AI and ML.</p>
+                                <a href="#" class="btn btn-primary" target="_blank">See Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width:100%;text-align:center;margin:auto;margin-top:10px;border:solid black 1px;padding-top:10px;border-radius:10px;">
+                            <img class="card-img-top" src="{% static '/webDevelopment/images/t2.png' %}" alt="Card image" style="width:75%; height:75%;margin:auto;">
+                            <div class="card-body">
+                                <h4 class="card-title">Vidit Anand</h4>
+                                <p class="card-text">Cybersecurity Specialist with more then 10 years of company experience.</p>
+                                <a href="#" class="btn btn-primary" target="_blank">See Profile</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            
+                <h3 class="title_top">OUR TEAM:-</h3>
+                <div class="row">
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/drpatil.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:20px;font-size:15px;text-align:center;">B. Tech, M. Tech, Ph. D. (1973-1985) IIT Bombay
+                                <br>President & CEO of Interactive Spectrum<br>Ex-MD & CEO of Edgesoft India
+                                <br>EX-Chairmen: Board of Directors, <br>IIT Bombay Alumini Association.</p>
+                                <a href="http://linkedin.com/in/drdeepakpatiliitb" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Dr. Deepak Patil</h3>
+                        <h6>Mentor & Expert Advisor</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/drsudarshan.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;">Ph. D. & M.E. IISC Bangalore 
+                                <br>Member, Board of Governors, IIT Jammu, Jammu, (J&K)<br>HOD- Aerospace Engineering, IIT Bombay
+                                <br>Researcher- Tohuku University<br>Expert Mentor<br>Exemplary Scholar</p>
+                                <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Dr. Sudarshan Kumar</h3>
+                        <h6>Mentor & Expert Advisor</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/Gaurav.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:70px;">Alumnus of IIT Bombay<br>Motivational Speaker
+                                <br>Managing Director:- SNN Eduworld Group</p>
+                                <a href="http://linkedin.com/in/gauravagrawal10" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Gaurav Agrawal</h3>
+                        <h6>Chairmen & Founder</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/ashish.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:90px;">Alumnus of IIT Bombay
+                        <br>IoT Expert<br>Yoga Expert</p>
+                        <a href="http://linkedin.com/in/ashish-bhatt-3ab41051" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Ashish Bhatt</h3>
+                        <h6>Technical Head & Founding Member</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/deepak.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:70px;">Alumnus of GRD-IMT, Dehradun<br>Enthusiast Coder<br>Brilliant Thinker</p>
+                                <a href="https://www.linkedin.com/mwlite/in/deepak-rawat-6a76bb1b1" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Deepak Rawat</h3>
+                        <h6>Head:- Web Development</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/ankit.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:90px;">Orthopaedic Surgeon<br>Enthusiastic Trekker
+                                    <br>Creative Thinker</p>
+                        <a href="http://linkedin.com/in/ankit-prasad-bhatt-a02701134" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Dr. Ankit Prasad Bhatt</h3>
+                        <h6>R&D Advisor</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/santoshi.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:70px;">IIT Bombay Alumnus<br>Founder at Tangybox</p>
+                                <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Santoshi Anuragi</h3>
+                        <h6>Business Development & HR manager</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/kalam.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:90px;">Ex-IIT Bombay PHD Fellow
+                                    <br>Expert mentor<br>Research fellow at IIT Bombay</p>
+                        <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Kalam</h3>
+                        <h6>Curriculum Development Lead</h6>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col frame">
+                        {% comment %} <img src = "{% static '/webDevelopment/images/deepak.png' %}">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:70px;">Alumnus of GRD-IMT, Dehradun<br>Enthusiast Coder<br>Brilliant Thinker</p>
+                                <a href="https://www.linkedin.com/mwlite/in/deepak-rawat-6a76bb1b1" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Deepak Rawat</h3>
+                        <h6>Head:- Web Development</h6> {% endcomment %}
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/sujit-removebg-preview (2).png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:2px;">Ph.D. Scholar, Mc Donnell International Scholars Academy
+Awardee Institute Silver Medal of IIT Bombay at the hands of Hon’ble Prime Minister of India-2018
+Awardee Tata fellowship offered by TCTD,  [2016 -18] 
+</p>
+                        <a href="" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Dr. Sujit Modi</h3>
+                        <h6>Mentor & Expert Advisor</h6>
+                    </div>
+                    <div class="col frame">
+                        {% comment %} <img src = "{% static '/webDevelopment/images/cherukari.png' %}" style="width:90%;">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:10px;">Assistant Professor at University of Groningen Zernike, Netherlands. B.tech- IIT Delhi (2004-2008). Senior Research Fellow –IIT D
+Post Doc Researcher- ETH Zurich, Netherland.</p>
+                                <a href="http://linkedin.com/in/ashish-cherukuri-79b69a10" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>DR. A.K. CHERUKARI</h3>
+                        <h6>Mentor & Expert Advisor</h6> {% endcomment %}
+                    </div>
+                    <div class="col frame">
+                        {% comment %} <img src = "{% static '/webDevelopment/images/kalam.png' %}">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:90px;">Ex-IIT Bombay PHD Fellow
+                                    <br>Expert mentor<br>Research fellow at IIT Bombay</p>
+                        <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Kalam</h3>
+                        <h6>Curriculum Development Lead</h6> {% endcomment %}
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <div class="content">
+                        <P style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            The pillar of any successful institution is a team of enthusiastic, creative, and
+talented mentors, and we believe in the same philosophy. We take pride in the fact
+that we have the most talented team, who are well experienced in education and
+corporate industries. All our interactive mentors are from the top industries
+working professionals, from giants like Airbus, Boeing, GE, ANSYS, Adobe,
+Microsoft, Michelin tires, IFM, and many more. All our mentors are the best
+knowledgeable, dedicated, and passionate candidates from top institutes across
+India having more than 20 years of experience. Satisfaction and success output is
+the only driving force for our team’s efforts. With great feedback and the not so
+great ones making us push our boundaries, our team has the right mixture of people
+from almost every language and technologies.<br><br>
+                        </P>
+                        
+                        <h4>
+                            About Founder:-</h4> <br>
+                            <img src="{% static '/webDevelopment/images/Gaurav.png' %}" alt-text="Gaurav Agrawal" style="height: 200px; width:200px;">
+                            
+                             <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">Gaurav Agrawal is an alumnus of the Indian Institute of Technology Bombay (IIT
+Bombay). With his keen interest in research and education, he left his government
+and private sector opportunities to become an educational entrepreneur. He has
+been a scholar throughout his education and was awarded various renowned
+scholarships in India. Gaurav, as an education and career expert has been helping
+education startups to grow. He believes that our approach can only be completed
+with the holistic development of the students by providing them a wide horizon of
+national and international exposure to get them job-ready. Seeing his track record
+and demonstrable expertise in the area of the education sector, he was invited by
+various teams of career counseling providers to help students in defining their
+future paths. With his teaching practices in the past, he confidently understands the
+student’s mind and helps them get a good career objective. He takes the credit for
+working successfully, with hundreds of students and, making several presentations
+of students, teachers, parents, principals, counselors, many universities, and
+government officials across India. He is also a member of the Indo Canada
+Chamber of Commerce (ICCC), an elite body for promoting and facilitating trade
+and commerce between Canada, India, and other countries around the world, by
+creating a relationship and links with global business organizations. As a part of his
+social responsibility, Gaurav takes free seminars across colleges, schools, and
+various institutions as a motivational speaker.
+                        </P>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- learning part start-->
+
+    <!-- learning part end-->
+
+    <!-- member_counter counter start -->
+    <section class="member_counter">
+        <div class="container">
+            <div class="row" style="align-items: center;">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter" style="color:white;font-size:60px;">
+                        <span class="counter">50</span>+
+                        <h4>All Teachers</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter" style="color:white;font-size:60px;">
+                        <span class="counter">100</span>+
+                        <h4> All Students</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter" style="color:white;font-size:60px;">
+                        <span class="counter">5</span>+
+                        <h4>Country</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- member_counter counter end -->
+
+    <!--::review_part start::-->
+       <section class="testimonial_part ">
+        <div class="container-fluid ">
+            <div class="row justify-content-center ">
+                <div class="col-xl-5 ">
+                    <div class="section_tittle text-center ">
+                        <p><br><br>
+                            <h5><a href="/aboutPage#tesimonials">Tesimonials</a></h5>
+                            <h4>Happy Students</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="textimonial_iner owl-carousel ">
+                        <div class="testimonial_slider ">
+                            <div class="row ">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>
+                                            For a long time, there was a need for such programs that would fulfill the needs of
+curious souls, available to them at their homes. Lots of schools and learning
+programs have suffered in this COVID-19 pandemic but these moments can be
+turned into an opportunity by changing our study and learning habits. And that's
+where Aptcoder brings meticulously planned study ventures according to the age
+and understanding ability of its students and providing them an easy way to learn
+with fun.
+                                        </p>
+                                        <h4>Virat Sharma</h4>
+                                        <h5>7th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/1.png' %} " alt="# ">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>
+                                            When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.
+                                        </p>
+                                        <h4>Rohan Gupta</h4>
+                                        <h5>9th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/2.png' %} " alt="# ">
+                                    </div>
+                                </div>
+                                {% comment %} <div class="col-xl-4 d-none d-xl-block ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %} " alt="# ">
+                                    </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="testimonial_slider ">
+                            <div class="row ">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>
+                                            When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.
+                                        </p>
+                                        <h4>Rohan Gupta</h4>
+                                        <h5>9th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/2.png' %} " alt="# ">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Priya Thakur</h4>
+                                        <h5>6th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/3.png' %} " alt="# ">
+                                    </div>
+                                </div>
+                                {% comment %} <div class="col-xl-4 d-none d-xl-block ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>
+                                            Anybody would want their child to learn cues of evergrowing digital world profoundly with least amount of stress, so that surround growth of their brains occur. Well I believe Aptcoder has provided such platform and no parent should miss this chance.
+                                        </p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %} " alt="# ">
+                                    </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="testimonial_slider ">
+                            <div class="row ">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Priya Thakur</h4>
+                                        <h5>6th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/3.png' %} " alt="# ">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>
+                                            For a long time, there was a need for such programs that would fulfill the needs of
+curious souls, available to them at their homes. Lots of schools and learning
+programs have suffered in this COVID-19 pandemic but these moments can be
+turned into an opportunity by changing our study and learning habits. And that's
+where Aptcoder brings meticulously planned study ventures according to the age
+and understanding ability of its students and providing them an easy way to learn
+with fun.
+                                        </p>
+                                        <h4>Virat Sharma</h4>
+                                        <h5>7th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/1.png' %} " alt="# ">
+                                    </div>
+                                {% comment %} <div class="col-xl-4 d-none d-xl-block ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>When i started my journey as a programmer, i realized I already lost lots of productive years doing traditional style of study and finally when I have become good at my work, i believe I could have been better at
+                                            it, if Platforms like Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_3.png' %} " alt="# ">
+                                    </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--::blog_part end::-->
+
+    <!-- footer part start-->
+
+    {% include 'webDevelopment/footer.html' %}
+
+    <!-- footer part end-->
+
+</body>
+
+{% include 'webDevelopment/scripts.html' %}
+
+</html>

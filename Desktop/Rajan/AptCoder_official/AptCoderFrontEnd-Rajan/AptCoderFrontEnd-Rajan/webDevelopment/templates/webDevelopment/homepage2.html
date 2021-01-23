@@ -1,0 +1,1352 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    
+    <!-- Extra CSS Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Extra CSS -->
+    <link rel="stylesheet" href="{% static 'css/homepage/section1.css' %}">
+
+    <!-- Extra CSS -->
+    <link rel="stylesheet" href="{% static 'css/homepage/section2.css' %}">
+    <!-- Extra CSS -->
+    <link rel="stylesheet" href="{% static 'css/homepage/section3.css' %}">
+
+
+    <!-- Extra html Include -->
+    {% include 'webDevelopment/links2.html' %}
+
+    <title>AptCoder Homepage</title>
+    <style>
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+    .nav-item a {
+    color: black;
+    margin-right:30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbtn1{
+    color:#fe2803;
+    background:white;
+    border:solid 2px #fe2803;
+    border-radius:20px;
+    padding:10px 10px 10px 10px;
+    width:200px;
+    margin-right:10px;
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+    transition:0.4s;
+}
+.navbtn1:hover{
+    color:white;
+    background:#fe2803;
+    border:solid 2px #fe2803;
+    border-radius:20px;
+    padding:10px 10px 10px 10px;
+    width:200px;
+    background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+    background: linear-gradient(to right, #fe2803, #fc940c);
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+    transition:0.4s;
+}
+.navbtn2{
+    color:white;
+    background:#fe2803;
+    border:solid 2px #fe2803;
+    border-radius:20px;
+    padding:10px 10px 10px 10px;
+    width:200px;
+    background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+    background: linear-gradient(to right, #fe2803, #fc940c);
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+    transition:0.4s;
+}
+.navbtn2:hover{
+    color:white;
+    background:#fe2803;
+    border:solid 2px #fe2803;
+    border-radius:20px;
+    padding:10px 10px 10px 10px;
+    width:200px;
+    background: -webkit-linear-gradient(to right, #fc940c, #fe2803);
+    background: linear-gradient(to right, #fc940c, #fe2803);
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+}
+
+.left1414{
+  font-size:18px;
+  margin-top:40px;
+  color:black;
+  font-weight:500;
+  font-family:monospace;
+  color:white;
+  text-align:center;
+  background:#fe2803;
+  border:solid 2px #fe2803;
+  border-radius:25px;
+  padding:10px 10px 10px 10px;
+  width:200px;
+  background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+  background: linear-gradient(to right, #fe2803, #fc940c);
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+  transition:0.4s;
+}
+.left1414:hover {
+  background: -webkit-linear-gradient(to right, #fc940c, #fe2803);
+  background: linear-gradient(to right, #fc940c, #fe2803);
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+  decoration:none;
+}
+.left14141{
+  font-size:15px;
+  margin-top:40px;
+  color:black;
+  font-weight:500;
+  font-family:monospace;
+  color:white;
+  text-align:center;
+  background:#fe2803;
+  border:solid 2px #fe2803;
+  border-radius:25px;
+  padding:10px 10px 10px 10px;
+  width:200px;
+  background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+  background: linear-gradient(to right, #fe2803, #fc940c);
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+  transition:0.4s;
+}
+.left14141:hover {
+  background: -webkit-linear-gradient(to right, #fc940c, #fe2803);
+  background: linear-gradient(to right, #fc940c, #fe2803);
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+  decoration:none;
+}
+
+.left141414{
+  font-size:18px;
+
+  margin-top:15px;
+  margin-right:20px;
+  color:black;
+  font-weight:500;
+  font-family:monospace;
+  color:white;
+  text-align:center;
+  background:#fe2803;
+  border:solid 2px #fe2803;
+  border-radius:20px;
+  padding:10px 10px 10px 10px;
+  width:250px;
+  background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+  background: linear-gradient(to right, #fe2803, #fc940c);
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+  transition:0.4s;
+}
+.left141414:hover {
+  background: -webkit-linear-gradient(to right, #fc940c, #fe2803);
+  background: linear-gradient(to right, #fc940c, #fe2803);
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+  decoration:none;
+}
+
+.input8{
+  padding:10px 100px 10px 10px;
+  border:solid 2px #fd7e3e;
+  border-radius:30px;
+  margin-top:40px;
+  margin-right:20px;
+  font-size: large;
+}
+
+.img81{
+  position:absolute;
+  top:1%;
+  left:25%;
+}
+.img82{
+  position:absolute;
+  top:75%;
+  left:25%;
+}
+.img83{
+  position:absolute;
+  top:10%;
+  left:75%;
+}
+.img84{
+  position:absolute;
+  top:60%;
+  left:75%;
+}
+
+
+/*  Image banner  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------   BANNER@4   ---------*/
+@media(min-width:750px){
+.row4{
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: row;
+text-align: center;
+}
+}
+.col4{
+flex-basis: 33.3%;
+}
+/* -------BANNER 6------- */
+
+.menu-wrapper {
+position: relative;
+width: 85%;
+margin: 1em auto;
+overflow-x: hidden;
+overflow-y: hidden;
+background: white;
+margin-top: 30px;
+}
+
+.menu	{
+width:80%;
+margin:auto;
+background: white;
+box-sizing: border-box;
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+}
+.menu::-webkit-scrollbar {
+display: none;
+}
+
+.item {
+display: inline-block;
+padding: 1em;
+box-sizing: border-box;
+border-radius: 10px;
+margin-right: 30px;
+}
+
+.paddle {
+position: absolute;
+top: 0;
+bottom:0;
+width: 3em;
+}
+.left-paddle {
+left: 0;
+background: #e40b8d;
+color: white;
+height: 50px;
+width: 50px;
+top:40%;
+border: solid black 2px;
+transition: 0.4s;
+border-radius:30px;
+}
+.left-paddle:hover{
+background: greenyellow;
+color: black;
+font-weight: 800;
+padding-top: 0px;
+
+}
+.right-paddle {
+right: 0;
+background: #e40b8d;
+color: white;
+height: 50px;
+width: 50px;
+top:40%;
+border: solid black 2px;
+transition: 0.4s;
+border-radius:30px;
+}
+.right-paddle:hover{
+background: greenyellow;
+color: black;
+font-weight: 800;
+padding-top: 0px;
+
+}
+
+/*-------------banner 10-------------*/
+.img101{
+  position:absolute;
+  top:40%;
+  left:0%;
+}
+.img102{
+  position:absolute;
+  top:40%;
+  right:0%;
+}
+
+/*banner 9*/
+@media(min-width:1300px){
+.banner9{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width:100%;
+  margin:auto;
+}
+}
+.card91{
+  flex-basis: 25%;
+  box-sizing: border-box;
+  position:relative;
+
+  background: url("{% static '/webDevelopment/images/homepage2/Group155.png' %}");
+  background-size:cover;
+  height:550px;
+  width:400px;
+  padding-top:230px;
+}
+.card92{
+  flex-basis: 25%;
+  box-sizing: border-box;
+  position:relative;
+
+  background: url("{% static '/webDevelopment/images/homepage2/Group156.png' %}");
+  background-size:cover;
+  height:550px;
+  width:400px;
+  padding-top:230px;
+}
+.card93{
+  flex-basis: 25%;
+  box-sizing: border-box;
+  position:relative;
+
+  background: url("{% static '/webDevelopment/images/homepage2/Group157.png' %}");
+  background-size:cover;
+  height:550px;
+  width:400px;
+  padding-top:230px;
+}
+.card94{
+  flex-basis: 25%;
+  box-sizing: border-box;
+  position:relative;
+
+  background: url("{% static '/webDevelopment/images/homepage2/Group158.png' %}");
+  background-size:cover;
+  height:550px;
+  width:400px;
+  padding-top:230px;
+}
+
+.p91{
+  font-weight:500;
+  font-size:20px;
+  text-align:center;
+
+}
+.p92{
+  font-weight:500;
+  font-size:15px;
+  text-align:center;
+
+}
+.p93{
+
+  text-align:center;
+
+}
+.p94{
+
+  text-align:center;
+
+}
+.p95{
+
+  text-align:center;
+
+}
+.p96{
+
+  text-align:center;
+
+}
+.p97{
+  margin:auto;
+  font-size:15px;
+  margin-top:15px;
+  color:black;
+  font-weight:500;
+  font-family:monospace;
+  color:white;
+  text-align:center;
+  background:#fe2803;
+  border:solid 2px #fe2803;
+  border-radius:20px;
+  padding:10px 10px 10px 10px;
+  width:150px;
+  background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+  background: linear-gradient(to right, #fe2803, #fc940c);
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+  transition:0.4s;
+}
+.p97:hover {
+          background: -webkit-linear-gradient(to right, #fc940c, #fe2803);
+    background: linear-gradient(to right, #fc940c, #fe2803);
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+    decoration:none;
+}
+
+/*  -- Extra added section --    */
+
+.extra-sec-button{
+color:black;
+background:#ffe1ae;
+border:#ffe1ae solid;
+border-radius:10px;
+width:70%;
+font-size:15px;
+font-weight:bold;
+height:50px;
+margin-top:2px;
+margin-bottom:2px;
+transition:0.4s;
+}
+.extra-sec-button:hover{
+color:white;
+background:#fc940c;
+border:#fc940c;
+}
+
+
+/*banner 12*/
+.card12{
+  flex-basis:33.3%;
+}
+
+/*   Footer   */
+.footer-div{
+  margin-top:100px;
+  background-image: url("{% static '/webDevelopment/images/homepage2/footer.png' %}");
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  width:100%;
+}
+
+.faqHeader {
+    font-size: 27px;
+    margin: 20px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'Glyphicons Halflings';
+    content: "e072"; /* "play" icon */
+    float: right;
+    color: #F58723;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #454444;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+}
+
+/* Banner 7 */
+.carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+}
+
+.carousel-control {
+  left: -12px;
+    height: 40px;
+  width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right {
+  right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -10px;
+  margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+  background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+.bg7 {
+  width:100%;
+  height: 400px;
+  border-radius: 100% 100% 0 0;
+}
+/* Banner 7 End */
+    </style>
+
+
+  </head>
+<body>
+
+  <!-- :::::::: NAVBAR STARTS HERE ::::::::: -->
+  <nav class="navbar navbar-expand-lg" style="background:white;">
+    <a class="navbar-brand" href="#"><img src="{% static '/webDevelopment/images/homepage2/apt_coder_logo2.png' %}" alt="logo" style="height:50px;margin-top:10px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/aboutPage">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contactPage">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="navbtn1 my-2 my-sm-0" type="submit">Sign in</button>
+        <button class="navbtn2 my-2 my-sm-0" type="submit">Get a Free Class</button>
+      </form>
+    </div>
+  </nav>
+  <!-- :::::::: NAVBAR ENDS HERE ::::::::: -->
+
+
+  <!--:::::::::::::  HEADER  ::::::::::-->
+  <section>
+    <div class="arr-img"><img src="{% static '/webDevelopment/images/homepage2/headerarr1x.png' %}" alt="logo"></div>
+    <div class="laptop-img"><img src="{% static '/webDevelopment/images/homepage2/laptop.png' %}" alt="logo"></div>
+
+      <div class="topHeader">
+        
+
+        <div><img src="{% static '/webDevelopment/images/homepage2/g.png' %}" alt="logo" id="child-img"></div>
+        <div class="header-left-1 d-block">APT CODER</div>
+        <div class="header-left-2 d-block">Seed coding into young minds</div>
+        <div class="header-left-4 d-block"><a id="sec111" href="#">Get a free class</a></div>
+        <div class="header-left-3 d-block">Enhance your child's education with coding<br>Our idea is to enhance every dimension<br>of a kid's mind, including logical thinking<br>and the implementation of ideas.</div>
+        
+<img src="{% static '/webDevelopment/images/homepage2/E2x.png' %}" id="side">
+        <div class="header-right-1 d-block">Startup India</div>
+        <div class="header-right-2 d-block">Lorem ipsum dolor sit amet,<br>consetetur sadipscing elitr, sed diam<br>nonumy eirmod tempor invidunt ut<br>labore et dolore magna aliquyam</div>
+        <div class="header-right-3 d-block"><button class="cr3-b">View Certification</buttom></div>
+      </div>
+  </section>
+  <!--:::::::::::::  ENDS HEADER  ::::::::::-->
+
+
+
+
+
+<!--:::::::::::::  BANNER@2 STARTS HERE  ::::::::::-->
+<section>
+<div class="container111">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col" ><img src="{% static '/webDevelopment/images/homepage2/yikes2x.png' %}" id="s2"></div>
+        <div class="col"><img src="{% static '/webDevelopment/images/homepage2/Group132.png' %}" id="s3"></div>
+
+      </div>
+
+    </div>
+    <div class="col">
+      <p id="world">The world is continuously evolving!</p>
+      <p id="we_at">We at Apt Coder recognize this and are here to
+<br>help getting kids ready with the future technology
+<br>at an early stage</p><br/>
+      <p id="your_kids">Your kids will learn from the mentors who have
+<br>been a part of Tech Giants.</p>
+<div class="row">
+<div calss="col"><img src="{% static '/webDevelopment/images/homepage2/logo1.png' %}" id="logo101"></div>
+<div calss="col"><img src="{% static '/webDevelopment/images/homepage2/mslogo.png' %}" id="logo102"></div>
+<div calss="col"><img src="{% static '/webDevelopment/images/homepage2/AdobeLogo.png' %}" id="logo103"></div>
+</div>
+<div id="get_a"><a style="color:white;"  href="">Get a free class</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+<!--:::::::::::::  BANNER@2 ENDS HERE  ::::::::::-->
+
+
+
+<!--:::::::::::::  IMG BANNER  ::::::::::-->
+<div class="card border-0">
+  <div class="">
+  <p class="what_your">What your child will <span style="color:red;">learn</span> with us?</p>
+    <div class="section333">
+      <img id="section334" src="{% static '/webDevelopment/images/homepage2/G2x.png' %}">
+     
+      <div class="circletext"><p style="color:white;">All Round <br> Development</p></div>
+      <div class="lefttext d-none d-xl-block"><p>Coding skills</p></div>
+      <div class="righttext"><p class="d-none d-xl-block">Life skills</p></div>
+
+      <div class="imgb1"><img src="{% static '/webDevelopment/images/homepage2/gifs/logic.gif' %}" height=100></div>
+      <div class="imgb2"><img src="{% static '/webDevelopment/images/homepage2/gifs/creativethinking.gif' %}" height=100></div>
+      <div class="imgb3"><img src="{% static '/webDevelopment/images/homepage2/gifs/decision.gif' %}" height=90></div>
+      <div class="imgb4"><img src="{% static '/webDevelopment/images/homepage2/gifs/efficiency.gif' %}" height=100></div>
+      <div class="imgb5"><img src="{% static '/webDevelopment/images/homepage2/gifs/innovation.gif' %}" height=100></div>
+      <div class="imgb6"><img src="{% static '/webDevelopment/images/homepage2/gifs/sequencing.gif' %}" height=100></div>
+      <div class="imgb7"><img src="{% static '/webDevelopment/images/homepage2/gifs/algo_thinking.gif' %}" height=100></div>
+      <div class="imgb8"><img src="{% static '/webDevelopment/images/homepage2/gifs/structure.gif' %}" height=100></div>
+
+      <div class="imgb1s"><img src="{% static '/webDevelopment/images/homepage2/gifs/logic.png' %}" height=100></div>
+      <div class="imgb1text d-none d-xl-block"><p id="imgb1text1">Logic</p></div>
+      <div class="imgb2s"><img src="{% static '/webDevelopment/images/homepage2/gifs/creativethinking.png' %}" height=100></div>
+      <div class="imgb2text d-none d-xl-block"><p id="imgb2text1">Creative Thinking</p></div>
+      <div class="imgb3s"><img src="{% static '/webDevelopment/images/homepage2/gifs/decision.png' %}" height=90></div>
+      <div class="imgb3text d-none d-xl-block"><p id="imgb3text1">Decision Making</p></div>
+      <div class="imgb4s"><img src="{% static '/webDevelopment/images/homepage2/gifs/efficiency.png' %}" height=100></div>
+      <div class="imgb4text d-none d-xl-block"><p id="imgb4text1">Efficiency</p></div>
+      <div class="imgb5s"><img src="{% static '/webDevelopment/images/homepage2/gifs/innovation.png' %}" height=100></div>
+      <div class="imgb5text d-none d-xl-block"><p id="imgb5text1">Innovation</p></div>
+      <div class="imgb6s"><img src="{% static '/webDevelopment/images/homepage2/gifs/sequencing.png' %}" height=100></div>
+      <div class="imgb6text d-none d-xl-block"><p id="imgb6text1">Squencing</p></div>
+      <div class="imgb7s"><img src="{% static '/webDevelopment/images/homepage2/gifs/algo_thinking.png' %}" height=100></div>
+      <div class="imgb7text d-none d-xl-block"><p id="imgb7text1">Algorithmic Thinking </p></div>
+      <div class="imgb8s"><img src="{% static '/webDevelopment/images/homepage2/gifs/structure.jpg ' %}" height=100></div>
+      <div class="imgb8text d-none d-xl-block"><p id="imgb8text1">Structure</p></div>
+    </div>
+  </div>
+</div>
+
+<!--:::::::::::::  IMG BANNER ENDS  ::::::::::-->
+
+
+<!--:::::::::::::  BANNER@3 STARTS HERE  ::::::::::-->
+<div class="container1" style="width:90%;margin:auto;margin-top:90px;">
+<p style="text-align:center;font-size:30px;font-weight:bold;"><span style="color:red;">Online</span> Learning is GREAT!</p>
+  <div class="row">
+    <div class="col">
+      <div class="parent">
+        <img class="image1" src="{% static '/webDevelopment/images/homepage2/img3.png' %}" style="width:80%;margin:auto; margin-left:50px;">
+        {% comment %} <img class="image2" src="{% static '/webDevelopment/images/homepage2/Home-Graph.gif' %}" style="width:85%;margin:auto;"> {% endcomment %}
+      </div>
+    </div>
+    <div class="col">
+      <p style="font-size:20px;font-family:Poppins;">Online learning outdoes the traditional ways in various<br>
+aspects, thus making it the best choice for your child's<br>
+coding adventures.</p>
+      <p style="font-size:20px;font-family:Poppins;">- You're not bound by geography</p>
+      <p style="font-size:20px;font-family:Poppins;">- Online learning may be more engaging than classroom <br>learning</p>
+      <p style="font-size:20px;font-family:Poppins;">- Feedback is faster and more frequent</p>
+      <p style="font-size:20px;font-family:Poppins;">- You have more control over your schedule</p>
+
+<div class="left1414"><a style="color:white;text-align:center;" href="">Get a free class</a></div>
+    </div>
+  </div>
+</div>
+<!--:::::::::::::  BANNER@3 ENDS HERE  ::::::::::-->
+
+
+<!--:::::::::::::  BANNER@4 STARTS HERE  ::::::::::-->
+  <div class="container1" style="width:90%;margin:auto;margin-top:60px;">
+<p style="text-align:center;font-size:30px;font-weight:bold;font-family:Poppins;">Making kids <span style="color:red;">Future</span> Ready</p>
+  <div style="width:90%;margin:auto;">
+  <div class="row4">
+  <div class="col4" style="margin:auto;text-align:center;"><p style="font-size:23px;font-weight:bold;color:#484848;">Collaborations with Foreign Universities</p>
+  <img style="width:40%;" src="{% static '/webDevelopment/images/homepage2/group1.png' %}">
+  <p style="font-size:15px;font-weight:bold;color:grey;margin-top:15px;font-family:Poppins;">Lorem ipsum dolor sit amet,<br>
+consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut<br>
+dolore magna aliqua. Ut enim ad<br>
+veniam, quis nostrud exercitation</p>
+  </div>
+  <div class="col4" style="margin:auto; margin-top:-1px;text-align:center;"><p style="font-size:23px;font-weight:bold;color:#484848;">Early Age Professional
+   <br> Network</p>
+  <img style="width:40%;" src="{% static '/webDevelopment/images/homepage2/group2.png' %}">
+  <p style="font-size:15px;font-weight:bold;color:grey;margin-top:15px;font-family:Poppins;">Lorem ipsum dolor sit amet,<br>
+consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut<br>
+dolore magna aliqua. Ut enim ad<br>
+veniam, quis nostrud exercitation</p>
+  </div>
+  <div class="col4" style="margin:auto;margin-top:5px;text-align:center;"><p style="font-size:23px;font-weight:bold;color:#484848;">Better Future</p>
+  <img style="width:40%;margin-top:30px;" src="{% static '/webDevelopment/images/homepage2/group3.png' %}">
+  <p style="font-size:15px;font-weight:bold;color:grey;margin-top:15px;font-family:Poppins;">Lorem ipsum dolor sit amet,<br>
+consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut<br>
+dolore magna aliqua. Ut enim ad<br>
+veniam, quis nostrud exercitation</p>
+  </div>
+  <div class="col4" style="margin:auto;margin-top:40px;margin-left:190px;text-align:center;"><p style="font-size:23px;font-weight:bold;color:#484848;">Kids Coding Community</p>
+  <img style="width:40%;" src="{% static '/webDevelopment/images/homepage2/group5.png' %}">
+  <p style="font-size:15px;font-weight:bold;color:grey;margin-top:15px;font-family:Poppins;">Lorem ipsum dolor sit amet,<br>
+consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut<br>
+dolore magna aliqua. Ut enim ad<br>
+veniam, quis nostrud exercitation</p>
+  </div>
+  <div class="col4" style="margin:auto;margin-top:40px;margin-right:200px;text-align:center;"><p style="font-size:23px;font-weight:bold;color:#484848;">Apt Social Warriors</p>
+  <img style="width:40%;" src="{% static '/webDevelopment/images/homepage2/group4.png' %}">
+  <p style="font-size:15px;font-weight:bold;color:grey;margin-top:15px;font-family:Poppins;">Lorem ipsum dolor sit amet,<br>
+consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut<br>
+dolore magna aliqua. Ut enim ad<br>
+veniam, quis nostrud exercitation</p>
+  </div>
+  </div>
+
+
+  </div>
+</div>
+<!--:::::::::::::  BANNER@4 ENDS HERE  ::::::::::-->
+
+
+
+<!--:::::::::::::  BANNER@5 STARTS HERE  ::::::::::-->
+<div class="container1" style="width:90%;margin:auto;margin-top:60px;">
+<p style="text-align:center;font-size:40px;font-weight:bold;margin-bottom:60px;">Learn By Doing : <span style="color:red;">Projects</span> for Apt Coders</p>
+  <div class="row">
+    <div class="col">
+      <img src="{% static '/webDevelopment/images/homepage2/img4.png' %}" style="width:65%;margin:auto; margin-left:150px;">
+    </div>
+    <div class="col">
+      <p style="font-size:25px;margin-top:40px;"><b>THE SNAKE GAME</b> </p>
+      <p style="font-size:18px;font-family:Poppins;color:#707070">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br>
+irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
+eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+</div>
+<!--:::::::::::::  BANNER@5 ENDS HERE  ::::::::::-->
+
+
+
+<!--::::::::::::  BANNER@6 STARTS HERE  :::::::::::-->
+<div class="menu-wrapper">
+  <ul class="menu" style="margin-top:30px;">
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/homepage2/img_6.png'%}" style="width: 85%;">
+    <p style="font-size:27px;margin-left:10px;margin-top:20px;"> <b>Project 1</b> </p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/homepage2/img_6.png'%}" style="width: 85%;">
+    <p style="font-size:27px;margin-left:10px;margin-top:20px;"> <b>Project 2</b> </p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/homepage2/img_6.png'%}" style="width: 85%;">
+    <p style="font-size:27px;margin-left:10px;margin-top:20px;"> <b>Project 3</b> </p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/homepage2/img_6.png'%}" style="width: 85%;">
+    <p style="font-size:27px;margin-left:10px;margin-top:20px;"> <b>Project 4</b> </p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/homepage2/img_6.png'%}" style="width: 85%;">
+    <p style="font-size:27px;margin-left:10px;margin-top:20px;"> <b>Project 5</b> </p>
+    </div>
+
+    <div class="item">
+      <img src="{% static '/webDevelopment/images/homepage2/img_6.png'%}" style="width: 85%;">
+      <p style="font-size:27px;margin-left:10px;margin-top:20px;"> <b>Project 6</b> </p>
+      </div>
+  </ul>
+
+  <div class="paddles">
+                <button class="left-paddle paddle hidden">
+                    < </button>
+                        <button class="right-paddle paddle">
+                            >
+                        </button>
+            </div>
+
+</div>
+<!--::::::::::::  BANNER@6 ENDS HERE  :::::::::::-->
+
+
+
+<div class="container-fluid bg7" style="background-color: #f5dbc6; background-image: linear-gradient(#f5dbc6, #f5dbc6);">
+<!--::::::::::  BANNER@7 STARTS HERE  :::::::::-->
+  <p style="color:black;text-align:center;font-size:40px;font-weight:600; margin-top: 80px;">What Parents <spna style="color:red;">Say?</span></p>
+    <div class="container" style="margin-top: 40px;">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+            </div><!--.row-->
+          </div><!--.item-->
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+            </div><!--.row-->
+          </div><!--.item-->
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+              <div class="col-md-4"><img src="{% static '/webDevelopment/images/homepage2/banner7.png' %}" alt="Image" style="max-width:100%;"></div>
+            </div><!--.row-->
+          </div><!--.item-->
+
+          </div><!--.carousel-inner-->
+            <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+            <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+          </div><!--.Carousel-->
+
+        </div>
+      </div>
+    </div><!--.container-->
+  </div>
+
+
+<!--::::::::      BANNER@8 STARTS HERE     :::::::::-->
+<div class="container1"  style="width:100%;margin:auto;position:relative;background-color: #f5dbc6;background-image: linear-gradient(#f5dbc6, white); height: 300px;">
+<p style="text-align:center;font-size:30px;font-weight:bold;">Ready for a <span style="color:red;">free</span> class on us?</p></br>
+<p style="text-align:center;font-size:15px;font-weight:500;">Start from your Free Trial, the free trial class will include a small lecture and a few tricks that<br>
+would enthrall your child in knowing more.</p>
+<p style="color:#fd7e3e;text-align:center;font-size:15px;font-weight:bold;">Fill the form to get a coupon code!</p>
+<div style="display:flex;align-items: center;justify-content: center;">
+<div class=""><input type="text" class="input8" placeholder="Enter your email" aria-label="email"></div>
+<div class="left1414"><a style="color:white;text-align:center;" href="">Get a Free Class</a></div>
+<div class="img81 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon3.png' %}"  style="margin-top: -80px; margin-left:-20px;"></div>
+<div class="img82 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon2.png' %}" style="margin-left:-100px;"></div>
+<div class="img83 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon1.png' %}"></div>
+<div class="img84 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon3.png' %}"></div>
+</div>
+</div>
+<!--::::::::      BANNER@8 ENDS HERE     :::::::::-->
+
+
+<!--:::::::::       BANNER@9 STARTS HERE       ::::::::::-->
+
+<div style="margin-top:50px;">
+<p style="color:black;text-align:center;font-size:40px;font-weight:600; margin-bottom:70px; margin-top:100px;">Our Courses</p>
+<div class="container-fluid" style="padding-left:100px; padding-right:100px;">
+
+    <div class="card-deck">
+      <div class="card text-dark border-0">
+        <img src="{% static '/webDevelopment/images/homepage2/Group155.png' %}" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <div class="p91"><p style="margin-bottom:10px; margin-top:195px;">Spoon Course</p></div>
+          <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+        </div>
+      </div>
+
+      <div class="card text-dark border-0">
+        <img src="{% static '/webDevelopment/images/homepage2/Group156.png' %}" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <div class="p91"><p style="margin-bottom:10px; margin-top:195px;">Spoon Course</p></div>
+          <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+        </div>
+      </div>
+
+      <div class="card text-dark border-0">
+        <img src="{% static '/webDevelopment/images/homepage2/Group155.png' %}" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <div class="p91"><p style="margin-bottom:10px; margin-top:195px;">Spoon Course</p></div>
+          <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+        </div>
+      </div>
+
+      <div class="card text-dark border-0">
+        <img src="{% static '/webDevelopment/images/homepage2/Group156.png' %}" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <div class="p91"><p style="margin-bottom:10px; margin-top:195px;">Spoon Course</p></div>
+          <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+          <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+        </div>
+      </div>
+    </div>
+
+
+
+  {% comment %} <div class="banner9">
+
+    <div class="card91">
+      <img src="{%static '/webDevelopment/images/homepage2/card1.png'%}">
+
+      <div class="p91"><p style="margin-bottom:0px;">Spoon Course</p></div>
+      <div class="p92"><p>(Age 1-3)</p></div>
+      <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+    </div>
+
+    <div class="card92">
+      <img src="{%static '/webDevelopment/images/homepage2/card1.png'%}">
+      <div class="p91"><p style="margin-bottom:0px;">Kiddo Course</p></div>
+      <div class="p92"><p>(Age 3-5)</p></div>
+      <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+    </div>
+
+    <div class="card93">
+      <img src="{%static '/webDevelopment/images/homepage2/card1.png'%}">
+      <div class="p91"><p style="margin-bottom:0px;">Buddy Course</p></div>
+      <div class="p92"><p>(Age 6-8)</p></div>
+      <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+    </div>
+
+    <div class="card94">
+      <img src="{%static '/webDevelopment/images/homepage2/card1.png'%}">
+      <div class="p91"><p style="margin-bottom:0px;">Pro Course</p></div>
+      <div class="p92"><p>(Age 9-12)</p></div>
+      <div class="p93"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p94"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p95"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p96"><p><i style="color:orange;" class="fa fa-circle"></i> Lorem ipsum dolor sit</p></div>
+      <div class="p97"><a style="color:white;text-align:center;" href="">Know More</a></div>
+    </div>
+
+</div> {% endcomment %}
+
+</div>
+</div>
+</div>
+<!--:::::::::       BANNER@9 ENDS HERE       ::::::::::-->
+
+
+
+<!--:::::::::   BANNER@10 STARTS HERE   :::::::::-->
+
+  <div class="" style="width:100%;margin:auto;margin-top:100px;margin-bottom:100px;position:relative;color:#FF9193;">
+    <div class="row" style="width:80%;margin:auto;">
+      <div class="col">
+          <div class="single_member_counter " style="color:#FF9193;font-size:140px;font-weight:bold;text-align:center;">
+              <span class="counter ">50</span>+
+              <h4 style="font-size:24px;color:#FF9193; ">Teachers</h4>
+          </div>
+      </div>
+      <div class="col">
+          <div class="single_member_counter " style="color:#FF9193;font-size:140px;font-weight:bold;text-align:center;">
+              <span class="counter ">100</span>+
+              <h4 style="font-size:24px;color:#FF9193; "> Students</h4>
+          </div>
+      </div>
+      <div class="col">
+          <div class="single_member_counter " style="color:#FF9193;font-size:140px;font-weight:bold;text-align:center;">
+              <span class="counter ">5</span>+
+              <h4 style="font-size: 24px;color:#FF9193; ">Countries</h4>
+          </div>
+      </div>
+  </div>
+  <div class="img101"><img class="d-none d-lg-block" src="{% static '/webDevelopment/images/homepage2/left.png' %}"></div>
+  <div class="img102"><img class="d-none d-lg-block" src="{% static '/webDevelopment/images/homepage2/right.png' %}"></div>
+  </div>
+<!--:::::::::   BANNER@10 ENDS HERE   :::::::::-->
+
+
+
+<!--:::::::::::::  Extra Added Banner Starts  ::::::::::::-->
+
+<div class="container1" style="width:90%;margin:auto;margin-top:60px;">
+<p style="text-align:center;font-size:30px;font-weight:bold;margin-top:0px;font-family:Poppins;">Teaching kids the <span style="color:red;">Apt Coder </span>way</p>
+  <div class="row">
+    <div class="col" style="text-align:center;"><br><br><br>
+      <button id="one" class="extra-sec-button w-50">Understand the problem</button><br>
+      <i class="fa fa-long-arrow-down" style="color:#fc940c;" aria-hidden="true"></i><br><br>
+      <button id="two" class="extra-sec-button w-50">Analyse the solution</button><br>
+      <i class="fa fa-long-arrow-down" style="color:#fc940c;" aria-hidden="true"></i><br><br>
+      <button id="three" class="extra-sec-button w-50">Get to Coding</button><br>
+      <i class="fa fa-long-arrow-down" style="color:#fc940c;" aria-hidden="true"></i><br> <br>
+      <button id="four" class="extra-sec-button w-50">Achieve the Target</button><br>
+    </div>
+    <div class="col">
+      <img class="extra-pic" id="five" src="{% static '/webDevelopment/images/homepage2/kid1.png' %}" style="width:60%;margin:auto;margin-top:60px;margin-bottom:20px;">
+
+</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items: center;justify-content: center;">
+<div class="left14141" style="margin-right:100px;"><a style="color:white;text-align:center;" href="">Know More About Us</a></div>
+<div class="left14141"><a style="color:white;text-align:center;" href="">Collaborate With Us</a></div>
+
+</div>
+
+</div>
+
+<!--:::::::::::::  Extra Added Banner Ends  ::::::::::::-->
+
+
+
+
+
+
+<!--:::::::::::::  BANNER@11 STARTS HERE  ::::::::::-->
+<div class="container1" style="width:90%;margin:auto;margin-top:60px;">
+
+  <div class="row">
+    <div class="col">
+      <img src="{% static '/webDevelopment/images/homepage2/img6.png' %}" style="width:95%;margin:auto;margin-top:10px;margin-bottom:20px;">
+    </div>
+    <div class="col">
+      <p style="text-align:center;font-size:30px;font-weight:bold;margin-top:0px;font-family:Poppins;">Teaching kids the <span style="color:red;">Apt Coder </span>way</p>
+      <p style="font-size:20px;font-family:Poppins;">When it comes to learning we believe in holistic approach- in which we<br>
+learn everything by doing it practically at the same time keeping the<br>
+learning process friendly to the learner. There are various ways of doing the<br>
+same thing, and by being smart we can save lots of energy for things that<br>
+are yet undone.<br>
+A thousand miles journey starts from first step.<br>
+You understand the code and you can play with the program.<br></p>
+<div style="display:flex;">
+<div class="left141414"><a style="color:white;text-align:center;" href="">Know More About Us</a></div>
+<div class="left141414"><a style="color:white;text-align:center;" href="">Collaborate With Us</a></div>
+</div>
+    </div>
+  </div>
+</div>
+<!--:::::::::::::  BANNER@11 ENDS HERE  ::::::::::-->
+
+
+
+<!--:::::::   BANNER@12 STARTS HERE   ::::::-->
+<div style="margin-top:50px;">
+<p style="color:black;text-align:center;font-size:40px;font-weight:500;">Meet our Star Mentors</p>
+<p style="color:black;text-align:center;font-size:15px;font-weight:500;">From <span style="color:red;">IITs</span> to <span style="color:red;">technical giants</span>, they've done it all!</p>
+<div style="display:flex;justify-content: center;flex-wrap: wrap;flex-direction: row;width:80%;margin:auto;">
+  <div class="card12">
+  <img src="{%static '/webDevelopment/images/homepage2/testimg.png'%}">
+  <p style="text-align:center;font-size:25px;font-weight:600;">Dr. Kalam</p>
+  <p style="text-align:center;font-size:15px;font-weight:500;">Lorem ipsum dolor sit amet, consectetur<br>
+adipiscing elit, sed do eiusmod tempor</p>
+  </div>
+
+  <div class="card12">
+  <img src="{%static '/webDevelopment/images/homepage2/testimg.png'%}">
+  <p style="text-align:center;font-size:25px;font-weight:600;">Dr. Kalam</p>
+  <p style="text-align:center;font-size:15px;font-weight:500;">Lorem ipsum dolor sit amet, consectetur<br>
+adipiscing elit, sed do eiusmod tempor</p>
+  </div>
+
+  <div class="card12">
+  <img src="{%static '/webDevelopment/images/homepage2/testimg.png'%}">
+  <p style="text-align:center;font-size:25px;font-weight:600;">Dr. Kalam</p>
+  <p style="text-align:center;font-size:15px;font-weight:500;">Lorem ipsum dolor sit amet, consectetur<br>
+adipiscing elit, sed do eiusmod tempor</p>
+  </div>
+
+  <div class="card12">
+  <img src="{%static '/webDevelopment/images/homepage2/testimg.png'%}">
+  <p style="text-align:center;font-size:25px;font-weight:600;">Dr. Kalam</p>
+  <p style="text-align:center;font-size:15px;font-weight:500;">Lorem ipsum dolor sit amet, consectetur<br>
+adipiscing elit, sed do eiusmod tempor</p>
+  </div>
+
+  <div class="card12">
+  <img src="{%static '/webDevelopment/images/homepage2/testimg.png'%}">
+  <p style="text-align:center;font-size:25px;font-weight:600;">Dr. Kalam</p>
+  <p style="text-align:center;font-size:15px;font-weight:500;">Lorem ipsum dolor sit amet, consectetur<br>
+adipiscing elit, sed do eiusmod tempor</p>
+  </div>
+</div>
+</div>
+<!--:::::::   BANNER@12 ENDS HERE   ::::::-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--::::::::::    BANNER@13 STARTS HERE    ::::::::-->
+<div style="width:70%;margin:auto;margin-top:60px;">
+<p style="text-align:center;font-size:40px;font-weight:bold;">Some <span style="color:red;">Apt</span> Questions</p>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne" style="background:white;">
+      <h4 class="mb-0">
+      Collapsible Group Item #1
+        <button style="color:red;font-size:30px;float:right;padding-top:0px;" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          +
+        </button>
+      </h4>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo" style="background:white;">
+      <h4 class="mb-0">
+      Collapsible Group Item #2
+        <button style="color:red;font-size:30px;float:right;padding-top:0px;" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          +
+        </button>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree" style="background:white;">
+      <h4 class="mb-0">
+      Collapsible Group Item #3
+        <button style="color:red;font-size:30px;float:right;padding-top:0px;" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          +
+        </button>
+      </h4>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour" style="background:white;">
+      <h4 class="mb-0">
+      Collapsible Group Item #4
+        <button style="color:red;font-size:30px;float:right;padding-top:0px;" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          +
+        </button>
+      </h4>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--::::::::::    BANNER@13 ENDS HERE    ::::::::-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--::::::::      BANNER@14 STARTS HERE     :::::::::-->
+<div class="container1" style="width:100%;margin:auto;margin-top:60px;position:relative;">
+<br><br><br>
+<p style="text-align:center;font-size:30px;font-weight:bold;">Ready for a <span style="color:red;">free</span> class on us?</p></br>
+<p style="text-align:center;font-size:15px;font-weight:500;">Start from your Free Trial, the free trial class will include a small lecture and a few tricks that<br>
+would enthrall your child in knowing more.</p>
+<p style="color:#fd7e3e;text-align:center;font-size:15px;font-weight:bold;">Fill the form to get a coupon code!</p>
+<div style="display:flex;align-items: center;justify-content: center;">
+<div class=""><input type="text" class="input8" placeholder="Enter your email" aria-label="email"></div>
+<div class="left1414"><a style="color:white;text-align:center;" href="">Get a Free Class</a></div>
+<div class="img81 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon3.png' %}"></div>
+<div class="img82 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon2.png' %}"></div>
+<div class="img83 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon1.png' %}"></div>
+<div class="img84 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon3.png' %}"></div>
+</div>
+</div>
+<!--::::::::      BANNER@14 ENDS HERE     :::::::::-->
+
+
+
+
+
+<!--:::::::FOOTER:::::::-->
+<footer>
+<div class="footer-div">
+
+<div class="row">
+
+<div class="col">
+    <div style="width:70%;margin:auto;margin-top:50px;">
+    <p style="color:white;text-align:left;font-weight:bold;">APT CODER</p>
+    <p style="color:white;text-align:left;">Lorem ipsum dolor sit amet, consectetur<br>
+    adipiscing elit, sed do eiusmod tempor</p>
+    <br><br><br>
+    <p style="color:white;text-align:left;">Designed By Weeble Media</p>
+
+    </div>
+</div>
+<div class="col">
+    <div style="width:70%;margin:auto;margin-top:50px;">
+    <p style="color:white;text-align:center;font-weight:bold;text-decoration:underline;">SITE MAP</p>
+    <p style="color:white;text-align:center;">About Us<br>
+Spoon Course<br>
+Kiddo Course<br>
+Buddy Course<br>
+Pro Course</p>
+    <br><br><br>
+    <p style="color:white;text-align:center;">Copyright 2020 Apt Coder</p>
+
+    </div>
+</div>
+<div class="col">
+    <div style="width:70%;margin:auto;margin-top:50px;">
+    <p style="color:white;text-align:center;font-weight:bold;text-decoration:underline;">FOLLOW US AT</p>
+    <p style="color:white;text-align:center;">
+    <a href="" target="_blank"><i class="fa fa-instagram" style="font-size:40px;color:white;margin-right:5px;"></i></a>
+    <a href="https://www.facebook.com/aptcoder" target="_blank"><i class="fa fa-facebook" style="font-size:40px;color:white;margin-right:5px;"></i></a>
+    <a href="" target="_blank"><i class="fa fa-twitter" style="font-size:40px;color:white;margin-right:5px;"></i></a>
+    <a href="https://www.linkedin.com/company/aptcoder/" target="_blank"><i class="fa fa-linkedin" style="font-size:40px;color:white;margin-right:5px;"></i></p></a>
+    <br><br><br>
+
+    </div>
+</div>
+
+</div>
+
+</div>
+</footer>
+<!--:::::::FOOTER ENDS:::::::-->
+<!-- Banner 7 -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+//   $(document).ready(function() {
+//     $('#Carousel').carousel({
+//         interval: 5000
+//     })
+// });
+</script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  {% include 'webDevelopment/scripts2.html' %}
+
+</html>

@@ -1,0 +1,1694 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" xmlns:font-size="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Required meta tags -->
+
+    {% include 'webDevelopment/links.html' %}
+    <style>
+
+body{
+    background-image: url("{% static '/webDevelopment/images/body_back_test/body_back_3.png' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+p{
+    font-size:16px;
+    font-family: "Times New Roman";
+    background:white;
+}
+
+
+
+/*-----------  First Image Container  ------------*/
+/*-----------  First Image Container  ------------*/
+/*-----------  First Image Container  ------------*/
+
+
+.box{
+    width: 90%;
+    margin: auto;
+    margin-bottom:20px;
+    margin-top:100px;
+}
+
+.first-image-container{
+    width: 100%;
+    height: 640px;
+    margin: auto;
+    background-color: black;
+    background-image: url("images/pic1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.form-contain{
+    position: relative;
+    float: right;
+    width: 320px;
+    margin-right: 40px;
+}
+.free_coupon{
+    position: absolute;
+    background: #e40b8d;
+    color: white;
+    width: 320px;
+    border: solid #e40b8d;
+    height: 50px;
+    font-weight: 600;
+    padding-top: 13px;
+    text-align: center;
+    
+    float: right;
+    margin-top: 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.free-coupon-text{
+    color: white;
+}
+
+.free_coupon:hover{
+    border-color: #e40b8d;
+    background: white;
+}
+.free_coupon:hover a{
+    text-decoration: none;
+    color: #e40b8d;
+}
+.form1{
+    position: absolute;
+    background: #f2e4d7;
+    color: white;
+    width: 320px;
+    border: solid #f2e4d7;
+    height: 480px;
+    font-weight: 600;
+    padding-top: 38px;
+    text-align: center;
+    
+    float: right;
+    margin-top: 110px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px black;
+}
+.form1 p{
+    color: black;
+    width: 90%;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.form-control{
+    width: 90%;
+    margin: auto;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.register-button{
+    
+    width: 60%;
+    font-size: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 30px;
+    border: solid #e40b8d;
+    background: #e40b8d;
+    color: white;
+    transition: 0.4s;
+}
+.register-button:hover{
+    background: greenyellow;
+    color: black;
+    border-color: black;
+}
+
+/*-----------  First Image Container ends  ------------*/
+/*-----------  First Image Container ends  ------------*/
+/*-----------  First Image Container ends  ------------*/
+
+
+
+/*-----------  Third Image Container starts  ------------*/
+/*-----------  Third Image Container starts  ------------*/
+/*-----------  Third Image Container starts  ------------*/
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 350px;
+  left: 16px;
+  text-align:left;
+  color:black;
+  font-size:25px;
+  font-family:cursive;
+  font-weight:600;
+}
+
+.top-left {
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  font-size:60px;
+  
+  color:black;
+  font-weight:800;
+  font-family:Times New Roman;
+}
+.top-left1a {
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  font-size:20px;
+  color:black;
+  font-weight:800;
+  font-family:Times New Roman;
+}
+
+.top-left2 {
+  position: absolute;
+  top: 98px;
+  left: 25px;
+  font-size:33px;
+  color:black;
+  font-weight:500;
+  font-family:monospace;
+}
+
+.top-right {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  width:30%;
+}
+
+
+.centered {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered a{
+    border:solid black;
+    font-size:25px;
+    padding:10px 10px 10px 10px;
+    border-radius:20px;
+    color:white;
+    background:red;
+    font-weight:600;
+    animation: glowing 1300ms infinite;
+    transition:0.4sec;
+}
+@keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 25px #2ba805;
+        }
+        50% {
+          background-color: #f34f29;
+          box-shadow: 0 0 25px #f34f29;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 25px #2ba805;
+        }
+      }
+
+
+.centered22 {
+  margin-top:50px;
+  position: relative;
+  left: 50%;
+  text-align:center;
+  transform: translate(-50%, -50%);
+}
+.centered22 a{
+    border:solid black;
+    font-size:25px;
+    padding:10px 10px 10px 10px;
+    border-radius:20px;
+    color:white;
+    background:red;
+    font-weight:600;
+    animation: glowing 1300ms infinite;
+    transition:0.4sec;
+}
+@keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 25px #2ba805;
+        }
+        50% {
+          background-color: #f34f29;
+          box-shadow: 0 0 25px #f34f29;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 25px #2ba805;
+        }
+      }
+
+
+
+.centered:hover a{
+    border:solid black;
+    font-size:25px;
+    padding:10px 10px 10px 10px;
+    border-radius:20px;
+    color:white;
+    background:#00e600;
+    font-weight:600;
+    transition:0.4sec;
+}
+
+
+.centered2 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered2 a{
+    border:solid black;
+    font-size:10px;
+    padding:10px 10px 10px 10px;
+    border-radius:20px;
+    color:white;
+    background:red;
+    font-weight:600;
+    animation: glowing 1300ms infinite;
+    transition:0.4sec;
+}
+.centered2:hover a{
+    border:solid black;
+    font-size:10px;
+    padding:10px 10px 10px 10px;
+    border-radius:20px;
+    color:white;
+    background:#00e600;
+    font-weight:600;
+    transition:0.4sec;
+}
+
+
+/*-----------  Third Image Container ends  ------------*/
+/*-----------  Third Image Container ends  ------------*/
+/*-----------  Third Image Container ends  ------------*/
+
+
+
+
+
+.corousal-label1{
+    background:white;
+    font-size:30px;
+    border:solid black 2px;
+    border-radius:15px;
+    color:black;
+    transition:0.4s;
+}
+
+.corousal-label1:hover {
+    background:white;
+    font-size:40px;
+    border:solid green 5px;
+    border-radius:15px;
+    color:green;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+
+
+
+
+        .input-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+        
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+        
+        .circular-square {
+
+            display: block;
+            margin-left: auto;
+            margin-top: 10px;
+            margin-right: auto;
+            width: 50%;
+        }
+        .carousalsection {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marquee {
+  width: 100vw;
+  height: 20%vw;
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling 50s linear infinite;
+}
+@keyframes scrolling {
+  0% { transform: translateX(0vw); }
+  100% { transform: translateX(-140vw); }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: 20vw;
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+}
+
+
+.marquee-content li img {
+  width: 100%;
+  /* height: 100%; */
+  border: 2px solid #eee;
+}
+.marquee-content li p {
+  width: 100%;
+  background-color: #eee5dc;
+  color: black;
+  font-size: 18px;
+  text-justify: auto;
+  /* height: 100%; */
+  border: 0px solid #eee;
+  text-align: center;
+}
+.flip-card {
+  background-color: transparent;
+  height: 400px;
+  perspective: 1200px;
+  margin-bottom: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+
+  color: white;
+  transform: rotateY(180deg);
+  padding: 30px 0;
+}
+
+
+.project-list1{
+    margin-right:10px;
+    margin-left:10px;
+    background:none;
+}
+.project-list1 a{
+    transition:0.4sec;
+}
+.project-list1:hover a{
+    color:green;
+    border-top:solid green;
+    border-bottom:solid green;
+    padding-top:10px;
+    padding-bottom:5px;
+    background:white;
+    padding-left:5px;
+    padding-right:5px;
+    
+}
+
+.popular-courses-text p{
+    color:#FF4500;
+    width:200px;
+    margin:auto;
+    border-top:solid #FF4500;
+    border-bottom:solid #FF4500;
+    padding-top:7px;
+    padding-bottom:7px;
+    margin-bottom:30px;
+    transition:0.4s;
+}
+.popular-courses-text:hover p{
+    color:#FF4500;
+    width:200px;
+    margin:auto;
+    border-top:solid #FF4500;
+    border-bottom:solid #FF4500;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:30px;
+    background:white;
+}
+.popular-courses-text h3{
+    color:green;
+    width:400px;
+    margin:auto;
+    border-top:solid green;
+    border-bottom:solid green;
+    padding-top:7px;
+    padding-bottom:7px;
+    margin-bottom:30px;
+    transition:0.4s;
+}
+.popular-courses-text:hover h3{
+    color:green;
+    width:400px;
+    margin:auto;
+    
+    border-top:solid green;
+    border-bottom:solid green;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:30px;
+    background:white;
+}
+
+
+.feature_part{
+    background-image: url("{% static '/webDevelopment/images/body_back_test/body_back_4.png' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
+
+
+
+/* pathmaker cards */
+.frame {
+    margin-top:70px;
+    text-align: center; 
+    position: relative;
+    cursor: pointer;    
+    perspective: 500px; 
+}
+.frame img {
+    
+}
+.frame .details {
+    width: 100%;
+    height: 100%;    
+    padding: 5% 8%;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: 50%;
+    background: rgba(255,255,255,0.9);  
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    
+}
+.frame:hover .details {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+    border:solid black;
+    border-radius:40px;
+}
+
+.details a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #55acee;
+  z-index: 1;
+  left:30%;
+}
+
+.details a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.details a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.details a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.details a:hover:before {
+  top: 0;
+}
+
+.details:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.details:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.details:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.details:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+
+
+
+
+
+.t_test {
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  text-align:left;
+  color:black;
+  font-size:25px;
+  font-family:cursive;
+  font-weight:600;
+}
+
+
+
+    </style>
+</head>
+
+<body style="width: 100%;">
+    <!--::header part start::-->
+    <header class="main_menu home_menu" style="background:white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="padding-top:10px;padding-bottom:10px;margin-bottom:0px; margin-top:0px;">
+                        <div class="navbar-brand">
+                            <a href="/" style="margin-top:0px;"><img src="{% static '/webDevelopment/images/PNG-LOGO.png' %}" alt="logo" style="height:50px;margin-top:0px;"> </a>
+                        </div>
+                        {% include 'webDevelopment/header.html' %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    {% comment %} <section class="banner_part" style="margin-top: 70px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <div>
+                                <h3 style="color:red;">Seed coding into young minds</h3>
+                                <h2 style="color:rgb(76, 255, 5);">Enhance Your Child's Education with Coding</h2>
+                                <p style="color:rgb(8, 43, 245);">Our idea is to enhance every dimension of a kids mind. Including logical thinking and implementation of ideas.</p><br>
+                                <img src="{% static '/webDevelopment/images/covid.gif' %}" style="width:200px;height:150px;"><br>
+                                <a href="/coursesPage" class="btn_1">View Course </a><br><br>
+                                <div class="input-container"><br>
+                                    <i class="fa fa-envelope icon"></i>
+                                    <form action="oneClickRegistration/" method="post">{% csrf_token %}
+                                    <input required class="input-field" id="email" name="email" type="text" style="width: 310px; height: 45px; font-size: 15px; margin-right: 15px;" placeholder="Get Free Coupon For Demo Class" class="hero-input-wrapper">
+                                        <button type="submit" ><img style="width: 40px; height: 40px;" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/241/backhand-index-pointing-right_1f449.png"></button>
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+    <!-- banner part start-->
+
+
+<!-- :::::::::::  Bannar@2  ::::::::::::: -->
+        {% comment %} <div class="box">
+
+
+            <div class="first-image-container" style="background-image: url({% static '/webDevelopment/images/courses/pic1.png'%});background-size: cover;background-repeat: no-repeat;position: relative;overflow: hidden;">
+                <div class="form-contain">
+
+
+                    <div class="free_coupon"><a class="free-coupon-text" href="#free_coupon_code">GET FREE COUPON FOR DEMO CLASS</a></div>
+
+
+                    <div class="form1">
+                        <input class="form-control" type="text" placeholder="Parent's Name">
+                        <input class="form-control" type="text" placeholder="Parent's Email">
+                        <input class="form-control" type="text" placeholder="Mobile No">
+                        <input class="form-control" type="text" placeholder="Kid's Name">
+                        <input class="form-control" type="text" placeholder="Kid's Grade">
+                        <p>I agree to <a href="">Terms and Services</a> and <a href="">Privacy Policy</a>.</p><br>
+                        
+                        <a class="register-button" href="{% url 'register' %}" style="margin-top:20px;">Register</a><br><br>
+                        
+                        <a class="register-button" href="{% url 'login' %}" style="margin-top:20px;">Login</a><br>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div> {% endcomment %}
+<!-- :::::::::::  Bannar@2 ends  ::::::::::::: -->
+
+
+<!-- :::::::::::::  Bannar3 starts  :::::::::::::::::: -->
+<div class="" style="width:90%;margin:auto;margin-top:90px;margin-bottom:20px;position:relative;text-align:center;">
+  <img src="{% static '/webDevelopment/images/aptcoderBlank.png' %}" alt="Snow" style="width:100%;">
+  <div class="bottom-left hidden-xs">Our idea is to enhance every dimension <br>of a kid's mind, including logical thinking
+<br>and the implementation of ideas.</div>
+  <div class="top-left hidden-xs hidden-sm hidden-md">Seed coding into young minds</div>
+  <div class="top-left1a hidden-lg">Seed coding into young minds</div>
+  <div class="top-right hidden-xs hidden-sm hidden-md"><a href="/"><img src="{% static '/webDevelopment/images/PNG-LOGO.png' %}" alt="logo"> </a></div>
+  <div class="top-left2 hidden-xs hidden-sm hidden-md">ENHANCE YOUR CHILD'S EDUCATION WITH CODING</div>
+  <div class="centered hidden-xs hidden-sm hidden-md"><a href="#free_coupon_code">Get Free Coupon For Demo Class</a></div>
+  <div class="centered2 hidden-lg"><a href="#free_coupon_code">Get Free Coupon For Demo Class</a></div>
+</div>
+<!-- :::::::::::::  Bannar3 ends  :::::::::::::::::: -->
+
+
+<div id="carouselExampleCaptions" class="carousel slide hidden-lg" data-ride="carousel">
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/webDevelopment/images/carousal/stl.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5 class="corousal-label1">Saving The Lives</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/carousal/beat-the-covid.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption   d-md-block">
+        <h5 class="corousal-label1">Beat The Covid</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/carousal/bounce1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption   d-md-block">
+        <h5 class="corousal-label1">Bounce</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/carousal/fighter1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption   d-md-block">
+        <h5 class="corousal-label1">Fighter</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/carousal/ufo.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption   d-md-block">
+        <h5 class="corousal-label1">UFO</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/carousal/solar.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption   d-md-block">
+        <h5 class="corousal-label1">Solar</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/carousal/rs.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption   d-md-block">
+        <h5 class="corousal-label1">Rocker Science</h5>
+      </div>
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+    <section style="margin-bottom:20px;padding-bottom:20px;" class="hidden-xs hidden-sm hidden-md">
+        <div  >
+            <div class="col-lg-12" style="text-align: center;padding-top:30px;">
+                <h1  style="color:green;">
+                    Work Speaks: Projects created by young minds<br><br>
+                </h1>
+            </div>
+            <div class="carousalcontent">
+                <div class="marquee">
+                 <ul class="marquee-content">
+
+                      <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/stl.jpg' %}" height=232>
+                     </li>
+
+
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/beat-the-covid.jpg' %}" height=232>
+                     </li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/bounce1.jpg' %}" height=232>
+                     </li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/fighter1.jpg' %}" height=232>
+                     </li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/ufo.jpg' %}" height=232>
+                     </li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/solar.jpg' %}" height=232>
+                     </li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/rs.jpg' %}" height=232>
+                        </li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/stl.jpg' %}" height=232>
+                     </li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/beat-the-covid.jpg' %}" height=232></li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/bounce1.jpg' %}" height=232></li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/fighter1.jpg' %}" height=232></li>
+                     <li class="project-list1"><img src="{% static '/webDevelopment/images/carousal/ufo.jpg' %}" height=232></li>
+
+                 </ul>
+                </div>
+            </div>
+            <div>
+             <div class="carousalcontent">
+                <div class="marquee">
+                 <ul class="marquee-content">
+
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">SAVING THE LIVES</a><br>A quick response<br> ambulance app</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">BEAT THE COVID</a><br>Learn precautionary measures<br> against covid-19 by playing games.</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">BOUNCE</a><br>An easy yet engaging game to<br> keep you entertained in free time</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">FIGHTER</a><br>Learn to protect yourselves by easy<br> yet effective moves in an interactive way</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">UFO</a><br>Connecting with life on other<br> planet made possible</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">SOLAR</a><br>Save the mother earth, get<br> educated with everything there<br> is to know about SOLAR</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">ROCKET SCIENCE</a><br>Learn and beat the laws of physics</p>
+                        </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">SAVING THE LIVES</a><br>A quick response ambulance app</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">BEAT THE COVID</a><br>Learn precautionary measures<br> against covid-19 by playing games.</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">BOUNCE</a><br>An easy yet engaging game to<br> keep you entertained in free time</p>
+                     </li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">FIGHTER</a><br>Learn to protect yourselves by easy<br> yet effective moves in an interactive way</p></li>
+                     <li class="project-list1" style="background:white;"><p style="background:none;"><a href="#" target="_blank">UFO</a><br>Connecting with life on other<br> planet made possible</p></li>
+
+                 </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- feature_part start-->
+    <section class="feature_part" style="margin-top:10px;margin-bottom:20px;padding-top:20px;padding-bottom:20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-5 align-self-center">
+                    <img src="{% static 'webDevelopment/images/banner_img.png' %}">
+                </div>
+                <div class="col-sm-12 col-lg-7 ">
+                    <div class="slideshow-container">
+                        <div class="mySlides fadeslide">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="{% static '/webDevelopment/images/Chart.jpg' %}" style="width:100%;height:500px;">
+                            <div class="textcaption" style="color:black;"> </div>
+                        </div>
+
+                        <div class="mySlides fadeslide">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="{% static '/webDevelopment/images/FSO.jpg' %}" style="width:100%;height:500px;">
+                            <div class="textcaption"> </div>
+                        </div>
+
+                        <div class="mySlides fadeslide">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="{% static '/webDevelopment/images/O-O.jpg' %}" style="width:100%;height:500px;">
+                            <div class="textcaption">Caption Three</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div><br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature_part" id="free_coupon_code">
+        <div class="container-fluid">
+            <div class="row" style="width:100%;">
+                <div class="col-sm-6 col-xl-3 align-self-center" style="padding:5px,10px,0px,0px;">
+                    <div class="single_feature_text ">
+                        <h2>Start from your Free Trial <img src="{% static 'webDevelopment/images/freetag.png' %}">
+                        </h2>
+                        <p>
+                            <h6>Starting from your Free Trial, the free trial class will include a small lecture and a
+few tricks that would enthrall your child in knowing more.</p>
+                        </h6>
+                        <div>
+                            <h3 style="text-align: center; ">
+                                <div class="input-container">
+                                    <form action="oneClickRegistration/" method="post" class="d-inline-block">{% csrf_token %}
+                                        <i class="fa fa-envelope icon" style="padding-top:5px;align-item:left;"></i>
+                                        <input required class="input-field" id="email" name="email" type="text" style="width: 70%; align-item:right; height: 45px; font-size: 15px; margin-right: 15px;" placeholder="Free Coupon For Demo Class" class="hero-input-wrapper">
+                                        <button type="submit" ><img style="width: 40px; height: 40px;" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/241/backhand-index-pointing-right_1f449.png"></button>
+                                    </form>
+                                        
+<!--                                    <input class="input-field" type="text" style="width: 270px; height: 45px; font-size: 10px;" placeholder="Get Free Coupon For Demo Class" class="hero-input-wrapper">-->
+<!--                                    <a href="/"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/241/backhand-index-pointing-right_1f449.png" style="width: 40px; height: 40px; margin-left:5px;"></a>-->
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <img src="{% static 'webDevelopment/images/betterfuture.jpg' %}">
+                        <div class="single_feature_part single_feature_part_2" style="background:white;">
+                            <span class="single_service_icon style_icon"><i class="ti-layers"></i></span>
+                            <h4><a href="/chartPage" target="_blank">Better Future </a></h4>
+                            <p style="color:black;">Have a peak into your future, if your join today.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <img src="{% static 'webDevelopment/images/coders.jpg' %}">
+                        <div class="single_feature_part single_feature_part_2" style="background:white;">
+                            <span class="single_service_icon style_icon"><i class="ti-new-window"></i></span>
+                            <h4><a href="/aboutPage#qualified_trainers" target="_blank">Qualified Trainers</a></h4>
+                            <p style="color:black;">We know what you need, and how to deliver it effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <img src="{% static 'webDevelopment/images/jobopportunity.jpg' %}">
+                        <div class="single_feature_part single_feature_part_2" style="background:white;">
+                            <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
+                            <h4><a href="/aboutPage#job_oppurtunity" target="_blank">Job Oppurtunity</a></h4>
+                            <p style="color:black;">Get a chance of proving your talent in the world's best software companies on the
+digital platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="centered22 hidden-xs hidden-sm hidden-md"><a href="#free_coupon_code">Get Free Coupon For Demo Class</a></div>
+        </div>
+    </section>
+
+    <!--::review_part start::-->
+    <section class="special_cource padding_top">
+        <div class="slideshow-container1" style="width:100%;margin:auto;">
+            <div class="container1" style="width:100%;margin:auto;">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5">
+                        <div class="section_tittle text-center popular-courses-text">
+                            <p>popular courses</p>
+                            <h3 style="background:white;">Special Programme</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-left:20px;margin-right:20px;">
+                    <div class="col">
+                        <div class="single_special_cource">
+                            <img src="{% static '/webDevelopment/images/newPrograms/Spoon.jpg' %}" class="special_img" alt="">
+                            <div class="special_cource_text"  style="background:white;">
+                                <a href="/courseDetailsPage" class="btn_4">Spoon</a>
+<!--                                <h4>$130.00</h4>-->
+                                <a href="/courseDetailsPage">
+                                </a>
+                                <p style="color:black;">Let your child code his future, mind leap into the scope of the digital world.</p>
+                                <div class="author_info">
+                                    <div class="author_img">
+                                        <img src="{% static '/webDevelopment/images/newPrograms/teacher-try.svg' %}" alt="" height=50>
+                                        <div class="author_info_text">
+                                            <p>Conduct by:</p>
+                                            <h5><a href="#">Rani Ray</a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="author_rating">
+                                        <div class="rating">
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                        </div>
+                                        <p>3.8 Ratings</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                                        <div class="col">
+                        <div class="single_special_cource" style="background:white;">
+                            <img src="{% static '/webDevelopment/images/newPrograms/Kiddo.jpg' %}" class="special_img" alt="">
+                            <div class="special_cource_text">
+                                <a href="/kiddoPage" class="btn_4" target="_blank">Kiddo </a>
+<!--                                <h4>$130.00</h4>-->
+                                <a href="/kiddoPage">
+                                </a>
+                                <p style="color:black;">When your kid knows about the digital world and intrigued to get into the depths
+of this uncharted territory.</p>
+                                <div class="author_info">
+                                    <div class="author_img">
+                                        <img src="{% static '/webDevelopment/images/newPrograms/teacher-try.svg' %}" alt="" height=50>
+                                        <div class="author_info_text">
+                                            <p>Conduct by:</p>
+                                            <h5><a href="#" target="_blank">Vaishnavi</a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="author_rating">
+                                        <div class="rating">
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                        </div>
+                                        <p>3.8 Ratings</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="single_special_cource">
+                            <img src="{% static '/webDevelopment/images/newPrograms/Buddy.jpg' %}" class="special_img" alt="">
+                            <div class="special_cource_text" style="background:white;">
+                                <a href="/buddyPage" class="btn_4" target="_blank">Buddy</a>
+<!--                                <h4>$160.00</h4>-->
+                                <a href="/buddyPage">
+                                </a>
+                                <p style="color:black;">It feels good to use coding for fun but if proper attention is given at the right time it
+can be turned into making a cornerstone opportunity for a bright career.</p>
+                                <div class="author_info">
+                                    <div class="author_img">
+                                        <img src="{% static '/webDevelopment/images/newPrograms/teacher-try.svg' %}" alt="" height=50>
+                                        <div class="author_info_text">
+                                            <p>Conduct by:</p>
+                                            <h5><a href="#" target="_blank">Deepak Pathak</a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="author_rating">
+                                        <div class="rating">
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                        </div>
+                                        <p>3.8 Ratings</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="single_special_cource">
+                            <img src="{% static '/webDevelopment/images/newPrograms/Pro.jpg' %}" class="special_img" alt="">
+                            <div class="special_cource_text" style="background:white;">
+                                <a href="/proPage" class="btn_4" target="_blank">Pro</a>
+<!--                                <h4>$140.00</h4>-->
+                                <a href="/proPage">
+                                </a>
+                                <p style="color:black;">Challenge yourself to view new targets every day, and rule on the digital world
+through codes.
+                                </p>
+                                <div class="author_info">
+                                    <div class="author_img">
+                                        <img src="{% static '/webDevelopment/images/newPrograms/teacher-try.svg' %}" alt="" height=50>
+                                        <div class="author_info_text">
+                                            <p>Conduct by:</p>
+                                            <h5><a href="#" target="_blank">Bhaskar Prajapati</a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="author_rating">
+                                        <div class="rating">
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                        </div>
+                                        <p>3.8 Ratings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- PPT COROUSAL PART STARTS HERE -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="width:60%;margin:auto; margin-top:20px;margin-bottom:20px;">
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/webDevelopment/images/ourvision/Slide1.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Food of Mind</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/ourvision/Slide2.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Food of Mind</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/ourvision/Slide3.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Food of Mind</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/ourvision/Slide4.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Food of Mind</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/ourvision/Slide5.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Food of Mind</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+<div class="centered22 hidden-xs hidden-sm hidden-md"><a href="#free_coupon_code">Get Free Coupon For Demo Class</a></div>
+</div>
+    <!--::blog_part end::-->
+
+
+    <!-- upcoming_event part start-->
+
+    <!-- learning part start-->
+<section class="advance_feature learning_part">
+    <div class="container">
+        <div class="row align-items-sm-center align-items-xl-stretch" >
+            <div class="col-md-6 col-lg-6" >
+                <div class="learning_member_text">
+                    <h5>Advance feature</h5>
+                    <h2>Our Advance Educator Learning System</h2>
+                    <p style="color:black; padding:10px 10px 10px 10px;border:solid white;border-radius:10px;">
+                        Our team consisting of senior industry professionals, faculties, education experts &
+enthusiastic educationalists have a unique mixture of various segments that cannot
+be attained by any competitor. Our Founder, Mr. Gaurav Agrawal , already has
+extensive experience in the education sector through his earlier assignment as
+Chief Business Development Officer in school education startup, Explorium . We
+have our interactive mentors who are/were associated with giants like Airbus,
+Boeing, GE, ANSYS, Adobe, Microsoft, Michelin tyres, and many more. We have
+faculties mentoring us from premier institutes like IITs. We have the education
+experts who successfully help students in securing the best universities in the world
+for further studies, with scholarship, on-demand. We are collaborating with
+international universities/colleges/companies to provide our kids with international
+opportunities by visiting their facility to experience real-life environments. With
+such a huge amount of local and global experience, we expect the best for our kids
+and nothing less
+                    </p><br><br>
+                    <img src="{% static '/webDevelopment/images/coding.gif' %}">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+
+                <div class="col-lg-12" style="text-align: center;margin-top:30px;">
+                    <h1 >Pathmakers</h1>
+                </div>
+                <div class="row">
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/drpatil.png' %}">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:20px;font-size:15px;text-align:center;">B. Tech, M. Tech, Ph. D. (1973-1985) IIT Bombay
+                                <br>President & CEO of Interactive Spectrum<br>Ex-MD & CEO of Edgesoft India
+                                <br>EX-Chairmen: Board of Directors, <br>IIT Bombay Alumini Association.</p>
+                                <a href="http://linkedin.com/in/drdeepakpatiliitb" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Dr. Deepak Patil</h3>
+                        <h6>Mentor & Expert Advisor</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/drsudarshan.png' %}">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;">Ph. D. & M.E. IISC Bangalore 
+                                <br>Member, Board of Governors, IIT Jammu, Jammu, (J&K)<br>HOD- Aerospace Engineering, IIT Bombay
+                                <br>Researcher- Tohuku University<br>Expert Mentor<br>Exemplary Scholar</p>
+                                <a href="#" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Dr. Sudarshan Kumar</h3>
+                        <h6>Mentor & Expert Advisor</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/Gaurav.png' %}">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:70px;">Alumnus of IIT Bombay<br>Motivational Speaker
+                                <br>Managing Director:- SNN Eduworld Group</p>
+                                <a href="https://www.linkedin.com/in/gauravagrawal10" target="_blank" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Gaurav Agrawal</h3>
+                        <h6>Chairmen & Founder</h6>
+                    </div>
+                    <div class="col frame">
+                        <img src = "{% static '/webDevelopment/images/ashish.png' %}">
+                        <div class = "details">
+                            <p class="pathmaker_info" style="color:black;font-family:Cursive;margin-top:90px;">Alumnus of IIT Bombay
+                        <br>IoT Expert<br>Yoga Expert</p>
+                        <a href="https://www.linkedin.com/in/ashish-bhatt-3ab41051/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                        </div>
+                        <h3>Ashish Bhatt</h3>
+                        <h6>Technical Head & Founding Member</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+                <div class="learning_member_text_iner">
+                    <span class="ti-pencil-alt"></span>
+                    <h4>Learn Anywhere</h4>
+                    <p style="color:black; padding:10px 10px 10px 10px;border:solid white;border-radius:10px;">The world is suffering from a health crisis and amidst, Covid-19 pandemic when
+schools and colleges are closed, it's a great opportunity to learn coding from home,
+it's available on multiple platforms, easily accessible throughout the world.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6  col-lg-6">
+                <div class="learning_member_text_iner">
+                    <span class="ti-stamp"></span>
+                    <h4>Expert Teacher</h4>
+                    <p style="color:black; padding:10px 10px 10px 10px;border:solid white;border-radius:10px;">An expert teacher is one who notices the problem, the student is facing and devises
+interesting ways to solve them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- learning part end-->
+
+
+    <!-- learning part start-->
+    <section class="learning_part ">
+        <div class="container ">
+            <div class="row align-items-sm-center align-items-lg-stretch ">
+                <div class="col-md-7 col-lg-7 ">
+                    <img src="{% static '/webDevelopment/images/one-gif.gif' %}" height=430>
+                </div>
+                <div class="col-md-5 col-lg-5 ">
+                    <div class="learning_member_text ">
+                        <h5>About us</h5>
+                        <h4>Learning with Love and Laughter</h4>
+                        <p style="color:black; padding:10px 10px 10px 10px;border:solid white;border-radius:10px;">When it comes to learning we believe in holistic approach- in which we learn everything by by doing it practically at the same time keeping the learning process friendly to the learner. There are various ways of doing the same
+                            thing, and by being smart we can save lots of energy for things that are yet undone.
+                        </p>
+                        <ul>
+                            <li style="color:black;"><span class="ti-pencil-alt "></span>A thousand miles journey starts from first step.</li>
+                            <li style="color:black;"><span class="ti-ruler-pencil "></span>You understand the code and you can play with the program.</li>
+                        </ul>
+                        <a href="# " class="btn_1 " target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- learning part end-->
+
+    <!-- member_counter counter start -->
+    {% comment %} <section class="member_counter ">
+        <div class="container">
+            <div class="row" style="margin-left:0px;">
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="single_member_counter " style="color:white;font-size:60px;">
+                        <span class="counter ">50</span>+
+                        <h4 style="font-size:24px; ">All Teachers</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="single_member_counter " style="color:white;font-size:60px;">
+                        <span class="counter ">100</span>+
+                        <h4 style="font-size:24px; "> All Students</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="single_member_counter " style="color:white;font-size:60px;">
+                        <span class="counter ">5</span>+
+                        <h4 style="font-size: 24px; ">Country</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> {% endcomment %}
+    <!-- member_counter counter end -->
+
+    <section class="member_counter ">
+        <div class="" style="width:80%;margin:auto;">
+            <div class="row" style="margin-left:0px;">
+                <div class="col">
+                    <div class="single_member_counter " style="color:white;font-size:50px;">
+                        <span class="counter ">50</span>+
+                        <h4 style="font-size:24px; ">All Teachers</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_member_counter " style="color:white;font-size:50px;">
+                        <span class="counter ">100</span>+
+                        <h4 style="font-size:24px; "> All Students</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_member_counter " style="color:white;font-size:50px;">
+                        <span class="counter ">5</span>+
+                        <h4 style="font-size: 24px; ">Country</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- member_counter counter end -->
+
+
+
+
+    <!--::review_part start::-->
+    <section class="testimonial_part " style="margin-bottom:10px;">
+        <div class="container-fluid ">
+            <div class="row justify-content-center ">
+                <div class="col-xl-5 ">
+                    <div class="section_tittle text-center ">
+                        <p><br><br>
+                            <h5><a href="/aboutPage#tesimonials">Tesimonials</a></h5>
+                            <h4>Happy Students</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="textimonial_iner owl-carousel">
+                        <div class="testimonial_slider " height=500>
+                            <div class="row ">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text " style="padding:10px 10px 10px 10px;">
+                                        <p>
+                                            For a long time, there was a need for such programs that would fulfill the needs of
+curious souls, available to them at their homes. Lots of schools and learning
+programs have suffered in this COVID-19 pandemic but these moments can be
+turned into an opportunity by changing our study and learning habits. And that's
+where Aptcoder brings meticulously planned study ventures according to the age
+and understanding ability of its students and providing them an easy way to learn
+with fun.
+                                        </p>
+                                        <h4>Virat Sharma</h4>
+                                        <h5>7th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/1.png' %} " alt="# " style="margin-top:100px;">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text " style="padding:10px 10px 10px 10px;">
+                                        <p>
+                                            When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.
+                                        </p>
+                                        <h4>Rohan Gupta</h4>
+                                        <h5>9th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/2.png' %} " alt="# " style="margin-top:100px;">
+                                    </div>
+                                </div>
+                                {% comment %} <div class="col-xl-4 d-none d-xl-block ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %} " alt="# ">
+                                    </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="testimonial_slider " height=500>
+                            <div class="row ">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text " style="padding:10px 10px 10px 10px;">
+                                        <p>
+                                            When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.
+                                        </p>
+                                        <h4>Rohan Gupta</h4>
+                                        <h5>9th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/2.png' %} " alt="# "  style="margin-top:50px;">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text " style="padding:10px 10px 10px 10px;">
+                                        <p>When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Priya Thakur</h4>
+                                        <h5>6th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/3.png' %} " alt="# "  style="margin-top:50px;">
+                                    </div>
+                                </div>
+                                {% comment %} <div class="col-xl-4 d-none d-xl-block ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>
+                                            Anybody would want their child to learn cues of evergrowing digital world profoundly with least amount of stress, so that surround growth of their brains occur. Well I believe Aptcoder has provided such platform and no parent should miss this chance.
+                                        </p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %} " alt="# ">
+                                    </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="testimonial_slider " height=500>
+                            <div class="row ">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text " style="padding:10px 10px 10px 10px;">
+                                        <p>When I started my journey as a programmer, I realized I already lost lots of
+productive years doing the traditional style of study, and finally, when I have
+become good at my work, I believe I could have been better at it if Platforms like
+Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Priya Thakur</h4>
+                                        <h5>6th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/3.png' %} " alt="# " style="margin-top:100px;">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center ">
+                                    <div class="testimonial_slider_text " style="padding:10px 10px 10px 10px;">
+                                        <p>
+                                            For a long time, there was a need for such programs that would fulfill the needs of
+curious souls, available to them at their homes. Lots of schools and learning
+programs have suffered in this COVID-19 pandemic but these moments can be
+turned into an opportunity by changing our study and learning habits. And that's
+where Aptcoder brings meticulously planned study ventures according to the age
+and understanding ability of its students and providing them an easy way to learn
+with fun.
+                                        </p>
+                                        <h4>Virat Sharma</h4>
+                                        <h5>7th Grade</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4 ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/students/1.png' %} " alt="# " style="margin-top:100px;">
+                                    </div>
+                                {% comment %} <div class="col-xl-4 d-none d-xl-block ">
+                                    <div class="testimonial_slider_text ">
+                                        <p>When i started my journey as a programmer, i realized I already lost lots of productive years doing traditional style of study and finally when I have become good at my work, i believe I could have been better at
+                                            it, if Platforms like Aptcoder would've been provided to me at the right time.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block ">
+                                    <div class="testimonial_slider_img ">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_3.png' %} " alt="# ">
+                                    </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--::blog_part end::-->
+
+
+
+
+    <!-- TESTIMONIAL 2 <test> -->
+    {% comment %} <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width:85%;margin:auto;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/webDevelopment/images/testimonial_img_4.png' %}" class="d-block w-100" alt="...">
+      <div class="t_text">test</div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/testimonial_img_4.png' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/webDevelopment/images/testimonial_img_4.png' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> {% endcomment %}
+
+
+
+
+    <!--::blog_part start::-->
+    <section class="blog_part section_padding " style="margin-top:20px;">
+        <div class="container ">
+            <div class="row justify-content-center ">
+                <div class="col-xl-5 ">
+                    <div class="section_tittle text-center" style="margin-bottom:10px;">
+                        <p style="color:black; padding:10px 10px 10px 10px;border:solid white;border-radius:10px;"><br><br> Our Blog <br><br></p>
+                        <h4>Students Blog</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-lg-4 col-xl-4 ">
+                    <div class="single-home-blog ">
+                        <div class="card ">
+                            <img src="{% static '/webDevelopment/images/blog/blog_1.png' %} " class="card-img-top " alt="blog ">
+                            <div class="card-body ">
+                                <a href="# " class="btn_4 " target="_blank">Design</a>
+                                <a href="/blogPage ">
+                                    <h5 class="card-title ">My life, My code</h5>
+                                </a>
+                                <p>
+                                    Whatever there is in digital world follows my command.
+                                </p>
+                                <ul>
+                                    <li> <span class="ti-comments "></span>2 Comments</li>
+                                    <li> <span class="ti-heart "></span>2k Likes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-4 ">
+                    <div class="single-home-blog ">
+                        <div class="card ">
+                            <img src="{% static '/webDevelopment/images/blog/blog_2.png' %} " class="card-img-top " alt="blog ">
+                            <div class="card-body ">
+                                <a href="# " class="btn_4 " target="_blank">Developing</a>
+                                <a href="/blogPage ">
+                                    <h5 class="card-title ">My life, My game</h5>
+                                </a>
+                                <p>
+                                    Now my imaginations are not wasted and I bring games out of them, that everyone enjoys.
+                                </p>
+                                <ul>
+                                    <li> <span class="ti-comments "></span>2 Comments</li>
+                                    <li> <span class="ti-heart "></span>2k Likes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-4 ">
+                    <div class="single-home-blog ">
+                        <div class="card ">
+                            <img src="{% static '/webDevelopment/images/blog/coder1.png' %} " class="card-img-top " alt="blog ">
+                            <div class="card-body ">
+                                <a href="# " class="btn_4 " target="_blank">Design</a>
+                                <a href="/blogPage ">
+                                    <h5 class="card-title ">Being a nerd was never so cool</h5>
+                                </a>
+                                <p>
+                                    I was always mocked upon by my mates for being a nerd, now they all come to me
+for digital solutions, and if I don't find an app to solve it, I CREATE one. Thanks
+to Aptcoder.
+                                </p>
+                                <ul>
+                                    <li> <span class="ti-comments "></span>2 Comments</li>
+                                    <li> <span class="ti-heart "></span>2k Likes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::blog_part end::-->
+
+    <!-- footer part start-->
+    <div class="centered22 hidden-xs hidden-sm hidden-md"><a href="#free_coupon_code">Get Free Coupon For Demo Class</a></div>
+    <script src="{% static '/js/slideshow.js' %} "></script>
+    {% include 'webDevelopment/footer.html' %}
+
+    <!-- footer part end-->
+</body>
+
+{% include 'webDevelopment/scripts.html' %}
+
+</html>

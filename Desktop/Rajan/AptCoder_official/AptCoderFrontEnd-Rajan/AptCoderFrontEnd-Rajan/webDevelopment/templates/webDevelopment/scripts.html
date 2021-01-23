@@ -1,0 +1,47 @@
+{% load static %}
+<!-- jquery plugins here-->
+<!-- jquery -->
+<script src="{% static '/js/jquery-1.12.1.min.js' %}"></script>
+<!-- popper js -->
+<script src="{% static '/js/popper.min.js' %}"></script>
+<!-- bootstrap js -->
+<script src="{% static '/js/bootstrap.min.js' %}"></script>
+<!-- easing js -->
+<script src="{% static '/js/jquery.magnific-popup.js' %}"></script>
+<!-- swiper js -->
+<script src="{% static '/js/swiper.min.js' %}"></script>
+<!-- swiper js -->
+<script src="{% static '/js/masonry.pkgd.js' %}"></script>
+<!-- particles js -->
+<script src="{% static '/js/owl.carousel.min.js' %}"></script>
+<script src="{% static '/js/jquery.nice-select.min.js' %}"></script>
+<!-- swiper js -->
+<script src="{% static '/js/slick.min.js' %}"></script>
+<script src="{% static '/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static '/js/waypoints.min.js' %}"></script>
+<!-- custom js -->
+<script src="{% static '/js/custom.js' %}"></script>
+<!-- spoon program accodion js -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+<!--curriculum page script-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>

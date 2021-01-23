@@ -1,0 +1,594 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+
+    {% include 'webDevelopment/links.html' %}
+<!-- spoon program accodion styling -->
+<style>
+body{
+    background-image: url("{% static '/webDevelopment/images/body_back_test/body_back_3.png' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+p{
+    color:black;
+    font-size:16px;
+    font-family: "Times New Roman";
+}
+.spoonbox
+{
+background-color:#f7e9da;
+border: 2px #ff9933;
+border-radius: 15px;
+margin-bottom: 30px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 10: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.spoonicon {
+width: 80px;
+height: 80px;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
+<body>
+<!--::header part start::-->
+<header class="main_menu home_menu" style="background:white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="padding-top:10px;padding-bottom:10px;margin-bottom:0px; margin-top:0px;">
+                        <div class="navbar-brand">
+                            <a href="/" style="margin-top:0px;"><img src="{% static '/webDevelopment/images/PNG-LOGO.png' %}" alt="logo" style="height:50px;"> </a>
+                        </div>
+                        {% include 'webDevelopment/header.html' %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Header part end-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+    <!--================ Start Course Details Area =================-->
+    <section class="course_section_padding_top" style="margin-top:80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 course_details_left">
+                    <div class="main_image">
+                        <img class="img-fluid" src="{% static '/webDevelopment/images/single_cource.png' %}" alt="">
+                        <br><br><br>
+                    </div>
+                    <div class="content_wrapper">
+                        <h3 class="title_top">Objectives</h3>
+                        <div class="content">
+                            <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            Childhood is one of the most productive times for any individual,
+                            there is immense learning capacity, an ability of understand things at a faster pace
+                            given proper directions. It is the time when we learn how to walk, play games, learn social behaviors.
+                                Therefore the kind of environment and opportunities presented to us in this
+                                period creates a larger impact on overall life ahead. The daily chores and
+                                surrounding environment later on turn into various habits such as food habits,
+                                social behavior, study habits, etc. That make the basis of daily living for us, for rest of our lives.
+                            Given proper attention this time could be turned into an opportunity to create curiosity
+                            within young minds for learning skills that could be useful to them throughout life.</p>
+                            </div>
+                            <h3 class="title_top"><br>Why Coding?</h3>
+                        <div class="content">
+                            <p style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            In today's world computers and technology have become part of our everyday lives and
+                            our involvement with digital world is growing everyday. To understand it better one
+                            must know the basics of how things work in digital world and therefore these
+                            precious years in which we have immense grasping power can be used for learning
+                            some basic skills of digital world and get ahead of everyone.<br>
+                            Kids, they entertain every new thing with full curiosity and they don't know what's
+                            right and what's not so often we have to spoon fed them proper nutrition that could
+                            nurture their body and proper skills that could nurture their brain. And in this case it becomes parent's responsibility to armament
+                            them with a proper skill set.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 right-contents">
+                    <div class="sidebar_top">
+                        <ul>
+                            <li>
+                                <a class="justify-content-between d-flex">
+                                    <h3>Full Course</h3>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="justify-content-between d-flex" href="#">
+                                    <p>Trainer’s Name</p>
+                                    <span class="color">George Mathews</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="justify-content-between d-flex" href="#">
+                                    <p>Course Fee </p>
+                                    <span>$230</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="justify-content-between d-flex" href="#">
+                                    <p>Available Seats </p>
+                                    <span>15</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="justify-content-between d-flex" href="#">
+                                    <p>Schedule </p>
+                                    <span>2.00 pm to 4.00 pm</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <a href="#" class="btn_1 d-block">Enroll the course</a>
+                    </div>
+                    <div class="sidebar_top">
+                    <div class="single_feature_text ">
+                        <h2>Start from your Free Trial</h2>
+                        <p>The free trial class will include a small lecture and few tricks
+                        that would enthrall your child in knowing more</p>
+                        <a href="#" class="btn_1">Start Your Free Trial</a>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<section class="course_section_padding_middle">
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="spoonbox">
+                        <ul>
+                            <li>
+                            <ul>
+                                <li href="#">
+                                    <h2 style="background-color:#0066FF; color:white;">
+                                        <img class="spoonicon" style="text-align:left;" src="{% static '/webDevelopment/images/silverspoonicon.png' %}">
+                                       <span style="text-align:center;">1. Pro Basic</span>
+                                    </h2>
+                                    <h3 style="text-align:center;">
+                                        (12 sessions)<br></h3>
+                                </li>
+                            <li style="text-align:center;">Internet safety--> Sequence--> Loops--> Events--> Projects
+                                <img style="text-align:center;" src="{% static '/webDevelopment/images/silverspoonprogramme.png' %}" style="width:400px; height:250px">
+                            </li>
+                            <li style="text-align:center;"  href="#">
+                                <h4>Course Fee <span>₹6,999</span> </h4>
+                                 <p><a href="#silver_spoon" class="btn_1" style="background-color:#FCE3BD;">View Details</a>
+                      <span>         <a href="#" class="btn_1">Enroll The Course</a></span></p>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="spoonbox">
+                        <ul>
+                            <li>
+                                <li style="text-align:center;" href="#">
+                                    <h2 style="background-color:#3AA655; color:yellow;">
+                                        <img class="spoonicon" style="text-align:left;" src="{% static '/webDevelopment/images/goldenspoonicon.png' %}">
+                                        <span style="text-align:center;">2. Pro Intermediate</span></h2>
+                            <h3>
+                                            52 sessions<br>(Silver Spoon + 40 Sessions)  </h3>
+                                </li>
+                            <li style="text-align:center;"> Pro Basic + [Basic UI/UX--> functions--> variables-->
+                                Binary--> logic gates--> conditionals-->  loops--> Reliable app--> Events--> Projects]<br><br>
+                            <img style="text-align:center;" src="{% static '/webDevelopment/images/goldenspoonprogramme.png' %}" style="width:400px; height:250px">
+                            </li>
+                            <li style="text-align:center;" href="#">
+                                <h4><br><br>Course Fee <span>₹33,999</span> </h4>
+                                 <a href="#golden_spoon" class="btn_1">View Details</a>
+                               <a href="#" class="btn_1">Enroll The Course</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-lg-6" style="margin:auto;">
+                    <div class="spoonbox">
+                        <ul>
+                            <li>
+                                <li href="#">
+                                    <h2 style="background-color:#FAFA37; color:black;">
+                                        <img class="spoonicon" style="text-align:left;" src="{% static '/webDevelopment/images/silverspoonicon.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span style="text-align:center;">3. Pro Advanced</span></h2>
+                            <h3 style="text-align:center;">152 Sessions <br>(Pro Intermediate + 100 sessions)</h3>
+                            <li style="text-align:center;">
+                                        [Internet exploring--> Advanced UI/US-->  Arguments--> Arrays--> Classes--> Objects--> Css--> OOPS-->
+                                            Database--> APIs--> Artificial Intelligence--> Machine Learning--> Coding community--> Projects]
+                                        </li>
+                            <img style="text-align:center;" src="{% static '/webDevelopment/images/goldenspoonprogramme.png' %}" style="width:400px; height:250px">
+                                </li>
+                            <li style="text-align:center" href="#">
+                                <h5>Course Fee <span>₹99,999</span> </h5>
+                                 <a href="#platinum_spoon" class="btn_1">View Details</a>
+                               <a href="#" class="btn_1">Enroll The Course</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+    <section class="course_section_padding_middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 course_details_left">
+                    <div class="content_wrapper">
+
+                        <h3 class="title" >Eligibility</h3>
+                        <div class="content" style="background:white;padding:10px 10px 10px 10px;border:solid black 1px;border-radius:15px;">
+                            1. Age group <= 9 years <br>
+                            2. Studying in KG - 3rd standards <br>
+                            3. Anyone with basic knowledge of computer<br>
+                        </div>
+
+                        <h2 id="silver_spoon">Course Outline</h2>
+                        <h5>The courses are divided into certain chapters and each chapter
+                        has been dedicated minimal required time to promote easy learning and prevent boredom.</h5>
+                        <div class="content">
+                            <table style="width:80%">
+                            <tr > <h3><br> <br> 1. Silver spoon:- 12 Sessions</h3></tr>
+                        <tr>
+                            <td><h4>1 Internet safety + 5 Sequence + 4 Loops + 2 Events + 4 Projects</h4></td>
+                        </tr>
+                            <tr >
+                            <td><button class="accordion">Curriculum
+                                <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>1. Platform using instructions and internet safety precautions and tips<br>
+                                    2. Primary exercises with mentor<br>
+                                    3. Instructions and sequencing<br>
+                                    4. Optimize program using loops<br>
+                                    5. Events and their uses<br>
+                                    6. Course Project ( 4 projects )<br>
+                                    7. How to share your work with friends, family
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                            <td><button class="accordion">Learnings <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>1. Internet safety level 1 <br>
+                                    2. Learn to program using loops sequence and events<br>
+                                    3. Collaborate for coding<br>
+                                    4. Investigate problem-solving techniques<br>
+                                    5. Debugging of code<br>
+                                    6. Persistence in the face of difficult tasks<br>
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                            <td><button class="accordion" id="golden_spoon">Outcome <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>1. Create story and animation <br>
+                                    2. Design game and developing basic games<br>
+                                    3. Make simulations- like rocket technology, fighter aircraft etc.<br> 4. Learn to share the work</p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                                <td><p>*The above will include all the concepts of coding
+                                    learned in the entire Silver Spoon course<br><br></p></td>
+                            </tr>
+
+                            </table>
+
+                            <table style="width:80%">
+                            <tr> <h3>2. Golden spoon:- 52 Sessions</h3></tr>
+                        <tr>
+                            <td><h4>Silver spoon +
+                                [Basic UI/UX (3)--> functions (3)--> variables (3)-->
+                                Binary (1)--> logic gates (2)--> conditionals (5)-->  loops  (13)--> Reliable app (2)--> Events (6)--> Projects (15)]</h4></td>
+                        </tr>
+                            <tr>
+                            <td><button class="accordion">Curriculum
+                                <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>1. Advance internet safety precautions and tips<br>
+                                    2. Programming through Complex sequences<br>
+                                    3. Impacts of Computing and Binary computing<br>
+                                    4. Programming with nested loops<br>
+                                    5. Variables and functions<br>
+                                    6. Events with complex sequence and conditionals loops<br>
+                                    7. Data collection and presentation<br>
+                                    8. Basic introduction about coding community<br>
+                                    9. How to share your work with friends, family and coding community
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                            <td><button class="accordion">Learnings <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>1. Internet safety level 2 <br>
+                                    2. Diving deep into programming, create programs with loops, events and conditionals<br>
+                                    3. Learn the user of binary and logic gates<br>
+                                    4. Collaboration technique, investigation and critical thinking skills<br>
+                                    5. Debugging of code<br>
+                                    6. Maintain persistence in the face of difficult tasks<br>
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                            <td><button class="accordion" ID="platinum_spoon">Outcome <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>1. Make advanced animations, and stories<br>
+                                    2. Create a story based game<br>
+                                    3. Create simulation, like planetary system, eclipse etc.<br>
+                                    4. Create interactive game<br>
+                                    5. Make GUI games<br>
+                                    6. Can Publish and Share the work
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                                <td><p>*The above will include all the concepts of coding
+                                    learned in the entire Golden Spoon course<br><br></p></td>
+                            </tr>
+                            </table>
+
+                            <table style="width:80%">
+                            <tr> <h3 ><br><br><br><br>3. Platinum spoon:- 100 Sessions</h3></tr>
+                        <tr>
+                             <td><h4>Golden spoon +
+                                [Internet exploring(2)--> Advanced UI/US (5)-->  arguments (5)--> arrays (3)--> classes (3)--> objects (2)--> css (5)--> OOPS (2)-->
+                                            database (5)--> APIs (5)--> Artificial Intelligence (4)--> Machine Learning (4)--> coding community (2)--> Projects (60)]</h4></td>
+                        </tr>
+                            <td><button class="accordion">Curriculum
+                                <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>
+                                    1. Exploring the internet<br>
+                                    2. App game, with user-interaction <br>
+                                    3. Interactive motion and shooting games <br>
+                                    4. Everlasting while(1) games <br>
+                                    5. Advance UI/UX topics <br>
+                                    6. Arguments, data types, arrays and classes <br>
+                                    7. Objects and OOPS concepts <br>
+                                    8. Create your own database to store data <br>
+                                    9. Fetch the data from database <br>
+                                    10. Use APIs for data fetch from live database <br>
+                                    11. Create own APIs for database access <br>
+                                    12. Make smart apps using AI <br>
+                                    13. Machine learning based apps <br>
+                                    14. Exploring the coding community and pitching your work
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                            <td><button class="accordion">Learnings <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>
+                                    1. Power of internet <br>
+                                    2. Solving complex problems using, function arguments, arrays <br>
+                                    3. Advance UI with CSS and layout management <br>
+                                    4. Objects and OOPs concepts <br>
+                                    5. Database and APIs <br>
+                                    6. Artificial intelligence and machine learning <br>
+                                    7. Algorithmic thinking <br>
+                                    8. Keypress and mouse events <br>
+                                    9. Coding community and its power
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                            <td><button class="accordion">Outcome <span style="text-align:right; "><p>+</p></span></button>
+                            <div class="panel">
+                                <p>
+                                    1. Create simulation and stories for fighter aircrafts <br>
+                                    2. Make simulations for missile technology <br>
+                                    3. Make Space technology simulation <br>
+                                    4. Develop interactive gaming apps <br>
+                                    5. Design motion and shooting games <br>
+                                    6. Create ever running games using data types <br>
+                                    7. Develop apps with database <br>
+                                    8. Make apps for own mobile <br>
+                                    9. Advance UI apps with responsive features <br>
+                                    10. Mathematical applications for mobile <br>
+                                    11. API based application <br>
+                                    12. Weather information apps using APIs and live database <br>
+                                    13. Artificial intelligence apps using machine learning <br>
+                                    14. AI and ML based apps like chatbot, garbage collector etc.
+                                </p>
+                            </div></td>
+                            </tr>
+                            <tr>
+                                <td><p>*The above will include all the concepts of coding
+                                    learned in the entire Platinum Spoon course<br><br></p></td>
+                            </tr>
+                            </table>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 right-contents">
+
+                    <h4 class="title">Reviews</h4>
+                    <div class="content">
+                        <div class="review-top row pt-40">
+                            <div class="col-lg-12">
+                                <h6 class="mb-15">Provide Your Rating</h6>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Quality</span>
+                                    <div class="rating">
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                        </div>
+                                    <span>Outstanding</span>
+                                </div>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Puncuality</span>
+                                    <div class="rating">
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                        </div>
+                                    <span>Outstanding</span>
+                                </div>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Quality</span>
+                                    <div class="rating">
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                            <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                        </div>
+                                    <span>Outstanding</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="feedeback">
+                            <h6>Your Feedback</h6>
+                            <textarea name="feedback" class="form-control" cols="10" rows="10"></textarea>
+                            <div class="mt-10 text-right">
+                                <a href="#" class="btn_1">Read more</a>
+                            </div>
+                        </div>
+                        <div class="comments-area mb-30">
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="{% static '/webDevelopment/images/cource/cource_1.png' %}" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Emilly Blunt</a>
+                                            </h5>
+                                            <div class="rating">
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                            </div>
+                                            <p class="comment">
+                                               Coding is fun for me now, earlier i had only ideas
+                                                now I have projects that I make out of them.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="{% static '/webDevelopment/images/cource/cource_2.png' %}" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Elsie Cunningham</a>
+                                            </h5>
+                                            <div class="rating">
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                            </div>
+                                            <p class="comment">
+                                               Coding is fun for me now, earlier i had only ideas
+                                                now I have projects that I make out of them.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="{% static '/webDevelopment/images/cource/cource_3.png' %}" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Maria Luna</a>
+                                            </h5>
+                                            <div class="rating">
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/color_star.svg' %}" alt=""></a>
+                                                <a href="#"><img src="{% static '/webDevelopment/images/icon/star.svg' %}" alt=""></a>
+                                            </div>
+                                            <p class="comment">
+                                               Coding is fun for me now, earlier i had only ideas
+                                                now I have projects that I make out of them.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--================ End Course Details Area =================-->
+
+<!-- footer part start-->
+
+    {% include 'webDevelopment/footer.html' %}
+
+<!-- footer part end-->
+
+</body>
+
+{% include 'webDevelopment/scripts.html' %}
+
+</html>

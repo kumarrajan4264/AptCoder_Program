@@ -1,0 +1,668 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    {% include 'webDevelopment/links2.html' %}
+    <title>AptCoder Buddy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+.left1414{
+      font-size:18px;
+      margin-top:15px;
+      color:black;
+      font-weight:500;
+      font-family:monospace;
+      color:white;
+      text-align:center;
+      background:#fe2803;
+      border:solid 2px #fe2803;
+      border-radius:20px;
+      padding:10px 10px 10px 10px;
+      width:250px;
+      background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+      background: linear-gradient(to right, #fe2803, #fc940c);
+      box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+      transition:0.4s;
+    }
+    .left1414:hover {
+              background: -webkit-linear-gradient(to right, #fc940c, #fe2803);
+        background: linear-gradient(to right, #fc940c, #fe2803);
+        box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+        decoration:none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .nav-item a {
+        color: black;
+        margin-right:30px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navbtn1{
+        color:#fe2803;
+        background:white;
+        border:solid 2px #fe2803;
+        border-radius:20px;
+        padding:10px 10px 10px 10px;
+        width:200px;
+        margin-right:10px;
+        box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+        transition:0.4s;
+    }
+    .navbtn1:hover{
+        color:white;
+        background:#fe2803;
+        border:solid 2px #fe2803;
+        border-radius:20px;
+        padding:10px 10px 10px 10px;
+        width:200px;
+        background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+        background: linear-gradient(to right, #fe2803, #fc940c);
+        box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+        transition:0.4s;
+    }
+    .navbtn2{
+        color:white;
+        background:#fe2803;
+        border:solid 2px #fe2803;
+        border-radius:20px;
+        padding:10px 10px 10px 10px;
+        width:200px;
+        background: -webkit-linear-gradient(to right, #fe2803, #fc940c);
+        background: linear-gradient(to right, #fe2803, #fc940c);
+        box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+        transition:0.4s;
+    }
+    .navbtn2:hover{
+        color:white;
+        background:#fe2803;
+        border:solid 2px #fe2803;
+        border-radius:20px;
+        padding:10px 10px 10px 10px;
+        width:200px;
+        background: -webkit-linear-gradient(to right, #fc940c, #fe2803);
+        background: linear-gradient(to right, #fc940c, #fe2803);
+        box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+    }
+
+
+
+
+
+
+
+
+.firstbanner{
+  background: url("{% static '/webDevelopment/images/buddy2/Group 284.png' %}");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.icons1{
+    position:absolute;
+}
+.icons2{
+    position:absolute;
+    left:180px;
+}
+.icons3{
+    position:absolute;
+    left:330px;
+}
+.ichover:hover{
+    opacity:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:750px){
+  .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+  }
+}
+.cards{
+  flex-basis: 33.3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  -- Extra added section --    */
+
+.extra-sec-button{
+  color:black;
+  background:#ffe1ae;
+  border:#ffe1ae solid;
+  border-radius:10px;
+  width:70%;
+  font-size:15px;
+  font-weight:bold;
+  height:50px;
+  margin-top:2px;
+  margin-bottom:2px;
+  transition:0.4s;
+}
+.extra-sec-button:hover{
+  color:white;
+  background:#fc940c;
+  border:#fc940c;
+}
+
+
+
+
+
+
+/* -------BANNER 6------- */
+
+  .menu-wrapper {
+	position: relative;
+	width: 85%;
+	margin: 1em auto;
+	overflow-x: hidden;
+    overflow-y: hidden;
+    background: white;
+    margin-top: 30px;
+}
+
+.menu	{
+  width:80%;
+  margin:auto;
+    background: white;
+	box-sizing: border-box;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+  }
+  
+.item {
+    display: inline-block;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.paddle {
+	position: absolute;
+	top: 0;
+  bottom:0;
+	width: 3em;
+}
+.left-paddle {
+    left: 0;
+    background: #e40b8d;
+    color: white;
+    height: 50px;
+    width: 50px;
+    top:40%;
+    border: solid black 2px;
+    transition: 0.4s;
+    border-radius:30px;
+}
+.left-paddle:hover{
+    background: greenyellow;
+    color: black;
+    font-weight: 800;
+    padding-top: 0px;
+
+}
+.right-paddle {
+    right: 0;
+    background: #e40b8d;
+    color: white;
+    height: 50px;
+    width: 50px;
+    top:40%;
+    border: solid black 2px;
+    transition: 0.4s;
+    border-radius:30px;
+}
+.right-paddle:hover{
+    background: greenyellow;
+    color: black;
+    font-weight: 800;
+    padding-top: 0px;
+
+}
+
+
+
+
+
+
+
+
+    .img81{
+      position:absolute;
+      top:1%;
+      left:25%;
+    }
+    .img82{
+      position:absolute;
+      top:75%;
+      left:25%;
+    }
+    .img83{
+      position:absolute;
+      top:10%;
+      left:75%;
+    }
+    .img84{
+      position:absolute;
+      top:60%;
+      left:75%;
+    }
+
+ .input8{
+      padding:10px 10px 10px 10px;
+      border:solid 2px #fd7e3e;
+      border-radius:30px;
+      margin-top:10px;
+      margin-right:10px;
+    }
+
+
+
+
+    /*   Footer   */
+    .footer-div{
+      margin-top:100px;
+      background-image: url("{% static "/webDevelopment/images/homepage2/footer.png" %}");
+      background-repeat: no-repeat;
+      background-size:cover;
+
+      width:100%;
+    }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <!-- :::::::: NAVBAR STARTS HERE ::::::::: -->
+    <nav class="navbar navbar-expand-lg" style="background:white;">
+  <a class="navbar-brand" href="#"><img src="{% static '/webDevelopment/images/homepage2/apt_coder_logo2.png' %}" alt="logo" style="height:50px;margin-top:10px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/aboutPage">About</a>
+      </li>
+       <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Courses</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contactPage">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="navbtn1 my-2 my-sm-0" type="submit">Sign in</button>
+      <button class="navbtn2 my-2 my-sm-0" type="submit">Get a Free Class</button>
+    </form>
+  </div>
+</nav>
+    <!-- :::::::: NAVBAR ENDS HERE ::::::::: -->
+
+
+
+
+
+<!--:::::::::::::  Extra Added Banner Starts  ::::::::::::-->
+
+<div class="container1 firstbanner" style="width:90%;margin:auto;margin-top:60px;position:relative;">
+
+  <div class="row">
+    <div class="col" style="text-align:left;"><br><br>
+    <p style="color:red;">LEARN WITH APTCODER</p>
+<p style="text-align:left;font-size:40px;font-weight:bold;margin-top:0px;font-family:Poppins;">Start coding with <br><span style="color:red;">Buddy Course </span>today.</p>
+<p style="color:black;font-weight:500;font-family:poppins;">A team of dedicated, resourceful, and goal-driven <br>professional educators with solid commitments to <br>the social and academic growth of every child.</p>
+
+<div class="left1414"><a style="color:white;text-align:center;" href="">Get a free class</a></div>
+    </div>
+    <div class="col">
+      <img src="{% static '/webDevelopment/images/buddy2/Group 184.png' %}" style="width:100%;margin:auto;margin-top:0px;margin-bottom:20px;">
+      
+</div>
+    </div>
+  </div>
+  
+<div style="position:absolute;left:40%;top:20%;" class="d-none d-lg-block"><img src="{% static '/webDevelopment/images/buddy2/icon2.png' %}"></div>
+</div>
+
+<!--:::::::::::::  Extra Added Banner Ends  ::::::::::::-->
+
+
+
+
+
+
+
+
+
+
+
+<div class="container1" style="width:90%;margin:auto;margin-top:60px;">
+  <div class="row">
+    <div class="col">
+      <img src="{% static '/webDevelopment/images/buddy2/buddy_pieChart.gif' %}" style="width:70%;margin:auto;">
+    </div>
+    <div class="col" style="position:relative;">
+      <p style="font-size:40px;margin-top:20px;font-weight:bold;">Course Objective</p>
+      <p style="font-size:20px;font-family:Poppins;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br>
+irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
+eu fugiat nulla pariatur.</p>
+<div class="icons1"><img src="{% static '/webDevelopment/images/buddy2/decision.gif' %}" height=100></div>
+<div class="icons2"><img src="{% static '/webDevelopment/images/buddy2/efficiency.gif' %}" height=100></div>
+<div class="icons3"><img src="{% static '/webDevelopment/images/buddy2/sequencing.gif' %}" height=100></div>
+<div class="icons1 ichover"><img src="{% static '/webDevelopment/images/buddy2/decision.png' %}" height=100></div>
+<div class="icons2 ichover"><img src="{% static '/webDevelopment/images/buddy2/efficiency.png' %}" height=100></div>
+<div class="icons3 ichover"><img src="{% static '/webDevelopment/images/buddy2/sequencing.png' %}" height=100></div>
+
+<div style="position:absolute;right:0px;" class="d-none d-lg-block"><img src="{% static '/webDevelopment/images/buddy2/icon1.png' %}"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<br><br>
+
+<p style="text-align:center;font-size:30px;font-weight:bold;margin-top:0px;font-family:Poppins;"><span style="color:red;">Course </span>plan</p>
+
+<div class="items" style="width:80%;margin:auto;">
+
+<div class="cards">
+    <img src="{% static '/webDevelopment/images/buddy2/Group 237.png' %}" style="margin-top:30px;width:90%;">
+</div>
+<div class="cards">
+    <img src="{% static '/webDevelopment/images/buddy2/Group 236.png' %}" style="width:100%;">
+</div>
+<div class="cards">
+    <img src="{% static '/webDevelopment/images/buddy2/Group 221.png' %}" style="margin-top:30px;width:90%;">
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--:::::::::::::  Extra Added Banner Starts  ::::::::::::-->
+
+<div class="container1" style="width:90%;margin:auto;margin-top:60px;">
+<p style="text-align:center;font-size:30px;font-weight:bold;margin-top:0px;font-family:Poppins;">What all your child will <span style="color:red;">Learn </span></p>
+  <div class="row">
+    <div class="col" style="text-align:center;"><br><br><br>
+      <button id="bone" class="extra-sec-button">Multi Player Game Dev</button><br>
+      <i class="fa fa-long-arrow-down" style="color:#fc940c;" aria-hidden="true"></i><br>
+      <button id="btwo" class="extra-sec-button">Web App Development</button><br>
+      <i class="fa fa-long-arrow-down" style="color:#fc940c;" aria-hidden="true"></i><br>
+      <button id="bthree" class="extra-sec-button">Pyhton</button><br>
+      <i class="fa fa-long-arrow-down" style="color:#fc940c;" aria-hidden="true"></i><br>
+      <button id="bfour" class="extra-sec-button">AI & ML</button><br>
+    </div>
+    <div class="col">
+      <img id="bfive" src="{% static '/webDevelopment/images/buddy2/bpic2.png' %}" style="width:90%;margin:auto;margin-top:0px;margin-bottom:20px;">
+      
+</div>
+    </div>
+  </div>
+  
+
+</div>
+
+<!--:::::::::::::  Extra Added Banner Ends  ::::::::::::-->
+
+
+
+
+
+
+
+<div class="container1" style="width:90%;margin:auto;margin-top:60px;">
+<p style="text-align:center;font-size:30px;font-weight:bold;"><span style="color:red;">Apt</span> learning with Projects for <span style="color:red;">Spoon</span> coders</p><br>
+  <div class="row">
+    <div class="col">
+      <img src="{% static '/webDevelopment/images/buddy2/NoPath - Copy (5).png' %}" style="width:80%;margin:auto;">
+    </div>
+    <div class="col">
+      <p style="font-size:20px;margin-top:80px;font-weight:600;">THE SAVING APP</p>
+      <p style="font-size:20px;font-family:Poppins;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>
+eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br>
+irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
+eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="menu-wrapper">
+  <ul class="menu">
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/buddy2/NoPath - Copy (6).png'%}" height=170>
+    <p style="font-size:20px;font-weight:500;margin-left:10px;">Project 1</p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/buddy2/NoPath - Copy (7).png'%}" height=170>
+    <p style="font-size:20px;font-weight:500;margin-left:10px;">Project 2</p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/buddy2/NoPath.png'%}" height=170>
+    <p style="font-size:20px;font-weight:500;margin-left:10px;">Project 3</p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/buddy2/NoPath - Copy (20).png'%}" height=170>
+    <p style="font-size:20px;font-weight:500;margin-left:10px;">Project 4</p>
+    </div>
+
+    <div class="item">
+    <img src="{% static '/webDevelopment/images/buddy2/Group 279.png'%}" height=170>
+    <p style="font-size:20px;font-weight:500;margin-left:10px;">Project 5</p>
+    </div>
+  </ul>
+
+  <div class="paddles">
+                <button class="left-paddle paddle hidden">
+                    < </button>
+                        <button class="right-paddle paddle">
+                            >
+                        </button>
+            </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container1" style="width:100%;margin:auto;margin-top:60px;position:relative;">
+<br><br><br>
+<p style="text-align:center;font-size:30px;font-weight:bold;">Ready for a <span style="color:red;">free</span> class on us?</p></br>
+<p style="text-align:center;font-size:15px;font-weight:500;">Start from your Free Trial, the free trial class will include a small lecture and a few tricks that<br>
+would enthrall your child in knowing more.</p>
+<p style="color:#fd7e3e;text-align:center;font-size:15px;font-weight:bold;">Fill the form to get a coupon code!</p>
+<div style="display:flex;align-items: center;justify-content: center;">
+<div class=""><input type="text" class="input8" placeholder="email" aria-label="email"></div>
+<div class="left1414"><a style="color:white;text-align:center;" href="">Get a Free Class</a></div>
+<div class="img81 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon3.png' %}"></div>
+<div class="img82 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon2.png' %}"></div>
+<div class="img83 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon1.png' %}"></div>
+<div class="img84 d-none d-lg-block"><img src="{% static '/webDevelopment/images/homepage2/icon3.png' %}"></div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!--:::::::FOOTER:::::::-->
+<footer>
+<div class="footer-div">
+
+<div class="row">
+
+<div class="col">
+    <div style="width:70%;margin:auto;margin-top:50px;">
+    <p style="color:white;text-align:left;font-weight:bold;">APT CODER</p>
+    <p style="color:white;text-align:left;">Lorem ipsum dolor sit amet, consectetur<br>
+    adipiscing elit, sed do eiusmod tempor</p>
+    <br><br><br>
+    <p style="color:white;text-align:left;">Designed By Weeble Media</p>
+
+    </div>
+</div>
+<div class="col">
+    <div style="width:70%;margin:auto;margin-top:50px;">
+    <p style="color:white;text-align:center;font-weight:bold;text-decoration:underline;">SITE MAP</p>
+    <p style="color:white;text-align:center;">About Us<br>
+Spoon Course<br>
+Kiddo Course<br>
+Buddy Course<br>
+Pro Course</p>
+    <br><br><br>
+    <p style="color:white;text-align:center;">Copyright 2020 Apt Coder</p>
+
+    </div>
+</div>
+<div class="col">
+    <div style="width:70%;margin:auto;margin-top:50px;">
+    <p style="color:white;text-align:center;font-weight:bold;text-decoration:underline;">FOLLOW US AT</p>
+    <p style="color:white;text-align:center;">
+    
+    <i class="fa fa-instagram" style="font-size:40px;color:white;margin-right:5px;"></i>
+    <i class="fa fa-facebook" style="font-size:40px;color:white;margin-right:5px;"></i>
+    <i class="fa fa-twitter" style="font-size:40px;color:white;margin-right:5px;"></i>
+    <i class="fa fa-linkedin" style="font-size:40px;color:white;margin-right:5px;"></i></p>
+    <br><br><br>
+
+    </div>
+</div>
+
+</div>
+
+</div>
+</footer>
+<!--:::::::FOOTER ENDS:::::::-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  {% include 'webDevelopment/scripts2.html' %}
+
+</html>

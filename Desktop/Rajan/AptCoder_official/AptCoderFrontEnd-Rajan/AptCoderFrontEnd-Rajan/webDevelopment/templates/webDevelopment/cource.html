@@ -1,0 +1,858 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+
+    {% include 'webDevelopment/links.html' %}
+
+    <link rel="stylesheet" type="text/css" href="{% static '/css/curriculum.css' %}">
+    <style>
+        body{
+            background-image: url("{% static '/webDevelopment/images/body_back_test/body_back_3.png' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        p{
+            color:black;
+            font-size:16px;
+            font-family: "Times New Roman";
+        }
+        
+    </style>
+</head>
+
+<body>
+<!--::header part start::-->
+        <header class="main_menu home_menu" style="background:white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="padding-top:10px;padding-bottom:10px;margin-bottom:0px; margin-top:0px;">
+                        <div class="navbar-brand">
+                            <a href="/" style="margin-top:0px;"><img src="{% static '/webDevelopment/images/PNG-LOGO.png' %}" alt="logo" style="height:50px;"> </a>
+                        </div>
+                        {% include 'webDevelopment/header.html' %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Header part end-->
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg" style="height:300px;margin-top:70px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <h2>Our Courses</h2>
+                            <p>Home<span>/</span>Courses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+
+    <!--::review_part start::-->
+<section id="curriculum-section" style="margin-top: 50px;">
+  <div class="container_curriculum">
+      <h2 class="curriculum__heading font-futura-bold">Curriculum & Pricing<br></h2>
+      <div class="curriculum__tabs">
+          <div class="curriculum__tabs-container">
+              <div class="tab" data-pricing-plan="beginner">
+                  <h5 class="font-futura-bold">Spoon</h5>
+                  <div class="text font-futura-bold">(Grade 1)</div>
+              </div>
+
+              <div class="tab" data-pricing-plan="intermediate">
+                  <h5 class="font-futura-bold">Kiddo</h5>
+                  <div class="text font-futura-bold">(Grade 2-3)</div>
+              </div>
+
+              <div class="tab" data-pricing-plan="advanced">
+                  <h5 class="font-futura-bold">Buddy</h5>
+                  <div class="text font-futura-bold">(Grade 4-6)</div>
+              </div>
+
+              <div class="tab" data-pricing-plan="professional">
+                  <h5 class="font-futura-bold">Pro</h5>
+                  <div class="text font-futura-bold">(Grade 7-9)</div>
+              </div>
+          </div>
+          <div class="curriculum__tabs-content">
+              <div class="curriculum__pricing_tab_context" data-pricing-plan="beginner">
+                      <div class="plan_cont" data-pricing-plan-type="one_time">
+                          <div class="plan basic ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Silver</h4>
+                                  <div class="details">
+                                      <div>12 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 4%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="content">Sequence, Fundamentals Coding Blocks, Loops</div>
+                                  <a href="/courseDetailsPage" target="_blank" rel="noreferrer noopener" class="color-primary" style="margin-bottom:10px;">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 6,999
+                                      </h3>
+                                      <del class="font18">Rs. 9,333</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 750</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=161>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-coding"></div>
+                                          </div>
+                                          <div class="detail">Introduction To Coding</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="plan standard preferred">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Golden</h4>
+                                  <div class="details">
+                                      <div>52 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 5%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="content">Events / UI,Conditionals, Complex Loop, Logic Structures, Turtle Coding</div>
+                                  <a href="/courseDetailsPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag popular">MOST POPULAR</div>
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 33,999
+                                      </h3>
+                                      <del class="font18">Rs. 48,600</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 708</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=2>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-developer"></div>
+                                          </div>
+                                          <div class="detail">App Developer Certificate</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-playstore"></div>
+                                          </div>
+                                          <div class="detail">Publish your app To Playstore</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-silicon"></div>
+                                          </div>
+                                          <div class="detail">Top 1% to go to Silicon Valley</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="plan premium ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Platinum</h4>
+                                  <div class="details">
+                                      <div>152 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 7%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="label">App Developer Certificate</div>
+                                  <div class="content">Extended UI/UX, Rich GUI app, Space Tech simulation in Space Lab / Game Lab, Professional Game Design</div>
+                                  <a href="/courseDetailsPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag best-value" style="background:#ff8d1a;">BEST VALUE
+                                  </div>
+                                  <div class="price"><h3 class="font-futura-bold">Rs. 99,999
+                                  </h3>
+                                      <del class="font18">Rs. 155,000</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 694</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=3>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-lifetime"></div>
+                                          </div>
+                                          <div class="detail">Lifetime Access</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-space"></div>
+                                          </div>
+                                          <div class="detail">Space Tech</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-fellowship"></div>
+                                          </div>
+                                          <div class="detail">15 Under 15 Fellowship</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  <div class="plan_cont hide" data-pricing-plan-type="subscriptions">
+                  </div>
+              </div>
+              <div class="curriculum__pricing_tab_context" data-pricing-plan="intermediate">
+                  <div class="plan_cont" data-pricing-plan-type="one_time">
+                      <div class="plan basic ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Silver</h4>
+                                  <div class="details">
+                                      <div>12 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 4%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="content">Sequence, Fundamentals Coding Blocks, Loops</div>
+                                  <a href="/kiddoPage" target="_blank" rel="noreferrer noopener" class="color-primary" style="margin-bottom:10px;">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 5,999
+                                      </h3>
+                                      <del class="font18">Rs. 6,299</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 750</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=161>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-coding"></div>
+                                          </div>
+                                          <div class="detail">Introduction To Coding</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      <div class="plan standard preferred">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Golden</h4>
+                                  <div class="details">
+                                      <div>52 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 5%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="content">Events / UI,Conditionals, Complex Loop, Logic Structures, Turtle Coding</div>
+                                  <a href="/kiddoPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag popular">MOST POPULAR</div>
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 33,999
+                                      </h3>
+                                      <del class="font18">Rs. 35,999</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 708</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=2>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-developer"></div>
+                                          </div>
+                                          <div class="detail">App Developer Certificate</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-playstore"></div>
+                                          </div>
+                                          <div class="detail">Publish your app To Playstore</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-silicon"></div>
+                                          </div>
+                                          <div class="detail">Top 1% to go to Silicon Valley</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      <div class="plan premium ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Platinum</h4>
+                                  <div class="details">
+                                      <div>152 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 7%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="label">App Developer Certificate</div>
+                                  <div class="content">Extended UI/UX, Rich GUI app, Space Tech simulation in Space Lab / Game Lab, Professional Game Design</div>
+                                  <a href="/kiddoPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag best-value" style="background:#ff8d1a;">BEST VALUE
+                                  </div>
+                                  <div class="price"><h3 class="font-futura-bold">Rs. 99,999
+                                  </h3>
+                                      <del class="font18">Rs. 107,999</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 694</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=3>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-lifetime"></div>
+                                          </div>
+                                          <div class="detail">Lifetime Access</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-space"></div>
+                                          </div>
+                                          <div class="detail">Space Tech</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-fellowship"></div>
+                                          </div>
+                                          <div class="detail">15 Under 15 Fellowship</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="plan_cont hide" data-pricing-plan-type="subscriptions">
+                  </div>
+              </div>
+              <div class="curriculum__pricing_tab_context" data-pricing-plan="advanced">
+                  <div class="plan_cont" data-pricing-plan-type="one_time">
+                      <div class="plan basic ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Silver</h4>
+                                  <div class="details">
+                                      <div>12 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 4%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="content">Sequence, Fundamentals Coding Blocks, Loops</div>
+                                  <a href="/buddyPage" target="_blank" rel="noreferrer noopener" class="color-primary" style="margin-bottom:10px;">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 5,999
+                                      </h3>
+                                      <del class="font18">Rs. 6,299</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 750</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=161>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-coding"></div>
+                                          </div>
+                                          <div class="detail">Introduction To Coding</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      <div class="plan standard preferred">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Golden</h4>
+                                  <div class="details">
+                                      <div>52 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 5%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="content">Events / UI,Conditionals, Complex Loop, Logic Structures, Turtle Coding</div>
+                                  <a href="/buddyPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag popular">MOST POPULAR</div>
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 33,999
+                                      </h3>
+                                      <del class="font18">Rs. 35,999</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 708</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=2>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-developer"></div>
+                                          </div>
+                                          <div class="detail">App Developer Certificate</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-playstore"></div>
+                                          </div>
+                                          <div class="detail">Publish your app To Playstore</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-silicon"></div>
+                                          </div>
+                                          <div class="detail">Top 1% to go to Silicon Valley</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      <div class="plan premium ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Platinum</h4>
+                                  <div class="details">
+                                      <div>152 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 7%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="label">App Developer Certificate</div>
+                                  <div class="content">Extended UI/UX, Rich GUI app, Space Tech simulation in Space Lab / Game Lab, Professional Game Design</div>
+                                  <a href="/buddyPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag best-value" style="background:#ff8d1a;">BEST VALUE
+                                  </div>
+                                  <div class="price"><h3 class="font-futura-bold">Rs. 99,999
+                                  </h3>
+                                      <del class="font18">Rs. 107,999</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 694</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=3>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-lifetime"></div>
+                                          </div>
+                                          <div class="detail">Lifetime Access</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-space"></div>
+                                          </div>
+                                          <div class="detail">Space Tech</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-fellowship"></div>
+                                          </div>
+                                          <div class="detail">15 Under 15 Fellowship</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="plan_cont hide" data-pricing-plan-type="subscriptions">
+                  </div>
+              </div>
+              <div class="curriculum__pricing_tab_context" data-pricing-plan="professional">
+                  <div class="plan_cont" data-pricing-plan-type="one_time">
+                      <div class="plan basic ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Silver</h4>
+                                  <div class="details">
+                                      <div>12 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 4%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="content">Sequence, Fundamentals Coding Blocks, Loops</div>
+                                  <a href="/proPage" target="_blank" rel="noreferrer noopener" class="color-primary" style="margin-bottom:10px;">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 5,999
+                                      </h3>
+                                      <del class="font18">Rs. 6,299</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 750</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=161>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-coding"></div>
+                                          </div>
+                                          <div class="detail">Introduction To Coding</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      <div class="plan standard preferred">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Golden</h4>
+                                  <div class="details">
+                                      <div>52 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 5%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="content">Events / UI,Conditionals, Complex Loop, Logic Structures, Turtle Coding</div>
+                                  <a href="/proPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag popular">MOST POPULAR</div>
+                                  <div class="price">
+                                      <h3 class="font-futura-bold">Rs. 33,999
+                                      </h3>
+                                      <del class="font18">Rs. 35,999</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 708</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=2>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-developer"></div>
+                                          </div>
+                                          <div class="detail">App Developer Certificate</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-playstore"></div>
+                                          </div>
+                                          <div class="detail">Publish your app To Playstore</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-silicon"></div>
+                                          </div>
+                                          <div class="detail">Top 1% to go to Silicon Valley</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      <div class="plan premium ">
+                              <div class="heading">
+                                  <h4 class="font-futura-bold">Platinum</h4>
+                                  <div class="details">
+                                      <div>152 sessions</div>
+                                      <div class="save_label font14 font-futura-bold">SAVE 7%</div>
+                                  </div>
+                              </div>
+                              <div class="plan_desc">
+                                  <h6 class="font-futura-bold">Curriculum Includes</h6>
+                                  <div class="label">Introduction to Coding</div>
+                                  <div class="label">App Developer Certificate</div>
+                                  <div class="content">Extended UI/UX, Rich GUI app, Space Tech simulation in Space Lab / Game Lab, Professional Game Design</div>
+                                  <a href="/proPage" target="_blank" rel="noreferrer noopener" class="color-primary">View Detailed
+                                      Curriculum</a>
+                              </div>
+                              <div class="price_desc">
+                                  <div class="plan_tag best-value" style="background:#ff8d1a;">BEST VALUE
+                                  </div>
+                                  <div class="price"><h3 class="font-futura-bold">Rs. 99,999
+                                  </h3>
+                                      <del class="font18">Rs. 107,999</del>
+                                  </div>
+                                  <div class="color-1565D8">Price Per Class Rs. 694</div>
+                                  <button class="submit-btn text-bold btn-primary" data-id=3>
+                                      <span class="text-bold">Buy Now</span>
+                                  </button>
+                                  <div class="content_center">
+                                      <div class="curriculum__bg global-icon curriculum__bg__achievement-star"></div>
+                                      <h6 class="font-futura-bold">Achievements</h6>
+                                  </div>
+                                  <div class="achievements">
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-lifetime"></div>
+                                          </div>
+                                          <div class="detail">Lifetime Access</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-space"></div>
+                                          </div>
+                                          <div class="detail">Space Tech</div>
+                                      </div>
+                                      <div class="box">
+                                          <div class="curriculum__bg-circle">
+                                              <div class="curriculum__bg global-icon curriculum__bg__achievement-fellowship"></div>
+                                          </div>
+                                          <div class="detail">15 Under 15 Fellowship</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="plan_cont hide" data-pricing-plan-type="subscriptions">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="curriculum__bottom">
+          <div>*Courses have lifetime validity. Cancel anytime from the enrollment day for no-questions-asked 100% refund.</div>
+          <a class="book_trial nav-item" href="/trialPage">
+              <button class="btn-primary book_trial_btn color-fff">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                      <path d="M1.28571 16.7143V13.8214H4.17857V16.7143H1.28571ZM4.82143 16.7143V13.8214H8.03571V16.7143H4.82143ZM1.28571 13.1786V9.96428H4.17857V13.1786H1.28571ZM4.82143 13.1786V9.96428H8.03571V13.1786H4.82143ZM1.28571 9.32143V6.42857H4.17857V9.32143H1.28571ZM8.67857 16.7143V13.8214H11.8929V16.7143H8.67857ZM4.82143 9.32143V6.42857H8.03571V9.32143H4.82143ZM12.5357 16.7143V13.8214H15.4286V16.7143H12.5357ZM8.67857 13.1786V9.96428H11.8929V13.1786H8.67857ZM5.14286 4.5C5.14286 4.67076 4.99219 4.82143 4.82143 4.82143H4.17857C4.00781 4.82143 3.85714 4.67076 3.85714 4.5V1.60714C3.85714 1.43638 4.00781 1.28571 4.17857 1.28571H4.82143C4.99219 1.28571 5.14286 1.43638 5.14286 1.60714V4.5ZM12.5357 13.1786V9.96428H15.4286V13.1786H12.5357ZM8.67857 9.32143V6.42857H11.8929V9.32143H8.67857ZM12.5357 9.32143V6.42857H15.4286V9.32143H12.5357ZM12.8571 4.5C12.8571 4.67076 12.7065 4.82143 12.5357 4.82143H11.8929C11.7221 4.82143 11.5714 4.67076 11.5714 4.5V1.60714C11.5714 1.43638 11.7221 1.28571 11.8929 1.28571H12.5357C12.7065 1.28571 12.8571 1.43638 12.8571 1.60714V4.5ZM16.7143 3.85714C16.7143 3.15402 16.1317 2.57143 15.4286 2.57143H14.1429V1.60714C14.1429 0.723215 13.4196 0 12.5357 0H11.8929C11.0089 0 10.2857 0.723215 10.2857 1.60714V2.57143H6.42857V1.60714C6.42857 0.723215 5.70536 0 4.82143 0H4.17857C3.29464 0 2.57143 0.723215 2.57143 1.60714V2.57143H1.28571C0.582589 2.57143 0 3.15402 0 3.85714V16.7143C0 17.4174 0.582589 18 1.28571 18H15.4286C16.1317 18 16.7143 17.4174 16.7143 16.7143V3.85714Z" fill="#fff"/>
+                  </svg>
+                  <span>Book a FREE Trial</span>
+              </button>
+          </a>
+      </div>
+  </div>
+</section>
+    <!--::blog_part end::-->
+
+    <!--::review_part start::-->
+    <section class="testimonial_part section_padding" style="margin-top: 50px;">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section_tittle text-center">
+                        <p>tesimonials</p>
+                        <h2>Happy Students</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="textimonial_iner owl-carousel">
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>From a long time there was a need for such programmes that would fulfill
+                                            the needs of curious souls, available to them at their homes. Lots of schools
+                                            and learning programmes have suffered in this COVID-19 pandemic but these
+                                            moments can be turned into opportunity by changing our study and learning
+                                            habits. And that's where Aptcoder brings meticulously planned study ventures
+                                            according to age and understanding ability of it's students and providing
+                                            them an easy way to learn with fun.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %}" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>From a long time there was a need for such programmes that would fulfill
+                                            the needs of curious souls, available to them at their homes. Lots of schools
+                                            and learning programmes have suffered in this COVID-19 pandemic but these
+                                            moments can be turned into opportunity by changing our study and learning
+                                            habits. And that's where Aptcoder brings meticulously planned study ventures
+                                            according to age and understanding ability of it's students and providing
+                                            them an easy way to learn with fun.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %}" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>From a long time there was a need for such programmes that would fulfill
+                                            the needs of curious souls, available to them at their homes. Lots of schools
+                                            and learning programmes have suffered in this COVID-19 pandemic but these
+                                            moments can be turned into opportunity by changing our study and learning
+                                            habits. And that's where Aptcoder brings meticulously planned study ventures
+                                            according to age and understanding ability of it's students and providing
+                                            them an easy way to learn with fun.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_2.png' %}" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>From a long time there was a need for such programmes that would fulfill
+                                            the needs of curious souls, available to them at their homes. Lots of schools
+                                            and learning programmes have suffered in this COVID-19 pandemic but these
+                                            moments can be turned into opportunity by changing our study and learning
+                                            habits. And that's where Aptcoder brings meticulously planned study ventures
+                                            according to age and understanding ability of it's students and providing
+                                            them an easy way to learn with fun.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %}" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>From a long time there was a need for such programmes that would fulfill
+                                            the needs of curious souls, available to them at their homes. Lots of schools
+                                            and learning programmes have suffered in this COVID-19 pandemic but these
+                                            moments can be turned into opportunity by changing our study and learning
+                                            habits. And that's where Aptcoder brings meticulously planned study ventures
+                                            according to age and understanding ability of it's students and providing
+                                            them an easy way to learn with fun.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_3.png' %}" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>From a long time there was a need for such programmes that would fulfill
+                                            the needs of curious souls, available to them at their homes. Lots of schools
+                                            and learning programmes have suffered in this COVID-19 pandemic but these
+                                            moments can be turned into opportunity by changing our study and learning
+                                            habits. And that's where Aptcoder brings meticulously planned study ventures
+                                            according to age and understanding ability of it's students and providing
+                                            them an easy way to learn with fun.</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="{% static '/webDevelopment/images/testimonial_img_1.png' %}" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--::blog_part end::-->
+<!--::javascript for programmes::-->
+<script  src="{% static '/js/curriculumpage.js' %}"></script>
+<!-- footer part start-->
+
+    {% include 'webDevelopment/footer.html' %}
+
+<!-- footer part end-->
+
+</body>
+
+{% include 'webDevelopment/scripts.html' %}
+
+</html>

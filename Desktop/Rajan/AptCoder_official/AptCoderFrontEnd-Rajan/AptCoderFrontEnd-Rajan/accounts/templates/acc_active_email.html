@@ -1,0 +1,44 @@
+
+{% autoescape off %}
+
+Hello {{ user.username }},
+
+
+This is Gaurav Agrawal, Founder of AptCoder, I welcome you to the AptCoder family.
+
+
+Please click on the link below(To activate your account, and activate your first class using the
+coupon given):
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+
+After clicking on this link, you will be redirected to our registration form to fill in your details to
+join our course. Now your account is activated and you can use this Coupon Code:
+{{ couponCode }} to make your first class free.
+
+
+After that, you can visit our course details page and have an overview of our courses and can
+select them according to your choice. Our experts will guide you on this and will clear all your
+doubts. If you find any problem or have any query related issues please contact us on this email
+id:support@aptcoder.com
+
+Our Facebook Page::
+https://www.facebook.com/aptcoder
+
+Our Linkedin Page::
+https://www.linkedin.com/company/aptcoder
+
+Our Company Address::
+SNN EDUWORLD PVT. LTD.
+B 305, Aashiyana, Plot No. 374,
+Sector-70,Noida G.B.Nagar,
+UP-201301,India
+
+Hope to meet you soon.
+
+Happy Learning!!!
+Regards,
+Gaurav Agrawal,
+Alumnus of IIT Bombay
+Chairman, SNN EDUWORLD Group
+{% endautoescape %}

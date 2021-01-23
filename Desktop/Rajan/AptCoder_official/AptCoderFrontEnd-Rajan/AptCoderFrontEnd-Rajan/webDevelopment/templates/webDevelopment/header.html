@@ -1,0 +1,64 @@
+{% load static %}
+<button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse main-menu-item justify-content-end"
+     id="navbarSupportedContent">
+    <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/aboutPage">About</a>
+        </li>
+        <li class="nav-item dropdown">
+            <div class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Courses</div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-itemAP" href="/coursesPage" style="padding: 8px; ">All Programmes</a>
+                <a class="dropdown-item" href="/courseDetailsPage">Spoon Program</a>
+                <a class="dropdown-item" href="/kiddoPage">Kiddo Program</a>
+                <a class="dropdown-item" href="/buddyPage">Buddy Program</a>
+                <a class="dropdown-item" href="/proPage">Pro Program</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Blog</a>     <!--/blogPage-->
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/blogPage" id="navbarDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="">Single blog</a>        <!--/singleBlogPage-->
+                <a class="dropdown-item" href="">Elements</a>       <!--/elementsPage-->
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contactPage">Contact</a>
+        </li>
+        {% if user.is_authenticated %}
+
+            <li class = "nav-item" style="font-size: 22px; color: #000; margin-right: 20px"> Welcome {{user}}  </li>
+
+            <li class = "nav-item">
+                 <a class="btn btn" href="/registered_course">Dashboard</a>
+            </li>
+        <li class = "nav-item">
+                 <a class="btn btn-danger" href="{% url 'logout' %}">Logout</a>
+            </li>
+        {% else %}
+        
+        <li class=" nav-item">
+            <a class="btn btn-success" style="margin-right: 20px" href="/login">Login</a>
+        </li>
+        <li class="nav-item" >
+            <a style="width: 100px;" class="btn btn-primary" href="/register">Sign Up</a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
